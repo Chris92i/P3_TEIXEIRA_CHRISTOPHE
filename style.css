@@ -83,24 +83,28 @@ header
 
 main
 {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-grow: 1;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-.ligne_1
+article
 {
+    width: 45%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin-right: 5px;
+    margin-top: 50px;
+    padding-top: 20px;
+    text-align: center;
+    background-color: hotpink;
+
 }
 
-.ligne_2
-{
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;  
-}
+
 
 /*
 .prochainement
@@ -118,6 +122,10 @@ main
     
 }
 */
+.bouton
+{
+    margin-top: 50px;
+}
 
 .bouton a {
     
@@ -125,8 +133,9 @@ main
 	padding:6px 30px 6px 30px;
 	border-radius:8px;
 	background: #569c87;
-	font:bold 13px Arial;
-	color:#E2C44F;
+	font: 40px Arial;
+    color:#E2C44F;
+
     }
 
 footer
@@ -146,4 +155,5 @@ footer a
     width: 50%;
     padding-top: 20px;
     font-size: 20px;
+    
 }
