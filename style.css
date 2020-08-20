@@ -102,8 +102,8 @@ article
     padding-top: 20px;
     text-align: center;
     padding-top: 120px;
-    background-color: hotpink;
-
+    box-shadow: 1px 1px 10px #EEEEEE;
+    
 }
 
 .la_note
