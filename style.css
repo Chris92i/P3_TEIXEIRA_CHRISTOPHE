@@ -83,23 +83,26 @@ header
 
 main
 {
-    width: 100%;
+    width: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     flex-grow: 1;
     flex-wrap: wrap;
+    justify-content: space-between;
     justify-content: center;
 }
 
 article
 {
-   height: 250px;
-    width: 45%;
+    height: 250px;
+    width: 200px;
     display: flex;
     flex-direction: column;
-    margin-right: 5px;
-    margin-top: 50px;
-    padding-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
     text-align: center;
     padding-top: 120px;
     box-shadow: 1px 1px 10px #EEEEEE;
@@ -175,5 +178,4 @@ footer a
     width: 50%;
     padding-top: 20px;
     font-size: 20px;
-    
 }
