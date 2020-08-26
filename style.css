@@ -101,8 +101,7 @@ article
     width: 200px;
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin: 15px 20px 15px 20px;
     text-align: center;
     padding-top: 120px;
     box-shadow: 1px 1px 10px #EEEEEE;
@@ -147,7 +146,8 @@ article
 */
 .bouton
 {
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .bouton a {
@@ -221,4 +221,9 @@ footer a
 .la_palette h2
 {
     font-family: "ShadowsIntoLight";
+}
+
+a
+{
+    text-decoration: none;
 }
