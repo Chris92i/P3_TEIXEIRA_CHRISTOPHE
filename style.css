@@ -179,3 +179,46 @@ footer a
     padding-top: 20px;
     font-size: 20px;
 }
+
+.la_note
+{
+    font-family: "Devonshire-Regular";
+    color: #3c1218;
+}
+
+.la_note h2
+{
+    font-family: "DeliusUnicase-Bold";
+    color: #3c1218;
+}
+
+.le_chic
+{
+    font-family: "Montez-Regular";
+   
+}
+
+.le_chic h2
+{
+    font-family: "AbrilFatface";
+}
+
+.le_delice
+{
+    font-family: "Dancing Script";
+}
+
+.le_delice h2
+{
+    font-family: "ShadowsIntoLight";
+}
+
+.la_palette
+{
+    font-family: "KaushanScript-Regular";
+}
+
+.la_palette h2
+{
+    font-family: "ShadowsIntoLight";
+}
