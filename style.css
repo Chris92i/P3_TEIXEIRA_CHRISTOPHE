@@ -86,7 +86,7 @@ header
 
 main
 {
-    width: 50%;
+    max-width: 480px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 50px;
@@ -96,6 +96,7 @@ main
     flex-wrap: wrap;
     justify-content: space-between;
     justify-content: center;
+    
 }
 
 
@@ -213,9 +214,32 @@ footer a
     font-size: 20px;  
 }
 
-/* ---------------- menu la note enchantee -------------------- */
+/* ---------------- menu P1 la note enchantee -------------------- */
 
 .body_P1
 {
     background-color: #fcdfdb;
 }
+
+/* ---------------- menu P2 le chic -------------------- */
+
+.body_P1
+{
+    background-color: #FEF4FD;
+}
+
+/* ---------------- menu P3 le delice -------------------- */
+
+.body_P1
+{
+    background-color: #F9F9F9;
+}
+
+/* ---------------- menu P4 la palette  -------------------- */
+
+.body_P1
+{
+    background-color: #FCFFFD;
+}
+
+
