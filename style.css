@@ -84,7 +84,7 @@ header
     
 }
 
-main
+#main
 {
     max-width: 480px;
     margin-left: 20px;
@@ -96,6 +96,7 @@ main
     flex-wrap: wrap;
     justify-content: space-between;
     justify-content: center;
+    background-color: white;
     
 }
 
@@ -216,7 +217,7 @@ footer a
 
 /* ---------------- menu P1 la note enchantee -------------------- */
 
-.body_P1
+.main_P1
 {
     background-color: #fcdfdb;
 }
