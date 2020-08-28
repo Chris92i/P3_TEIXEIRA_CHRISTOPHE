@@ -49,6 +49,8 @@ table {
 
 /* ---------------------------------------------- au dessus reset css d'Eric Meyers------------------------------------- */
 
+/* ------------------------ page d'accueil --------------------- */
+
 html, body {
     height: 100%;
 }
@@ -111,39 +113,54 @@ article
 .la_note
 {
     background-color: #fcdfdb;
+    font-family: "Devonshire-Regular";
+    color: #3c1218;
+}
+
+.la_note h2
+{
+    font-family: "DeliusUnicase-Bold";
+    color: #3c1218;
 }
 
 .le_chic
 {
     background-color: #FEF4FD;
+    font-family: "Montez-Regular";
+}
+
+.le_chic h2
+{
+    font-family: "AbrilFatface";
 }
 
 .le_delice
 {
     background-color: #F9F9F9;
+    font-family: "Dancing Script";
+}
+
+.le_delice h2
+{
+    font-family: "ShadowsIntoLight";
 }
 
 .la_palette
 {
     background-color: #FCFFFD;
+    font-family: "KaushanScript-Regular";
 }
 
-/*
-.prochainement
+.la_palette h2
 {
-    align-items: center;
-    background-color: #569c87;
-    color: #E2C44F;
-    text-align: center;
-    border-top: 2px;
-    border-bottom: 2px;
-    border-left: 20px;
-    border-right: 20px;
-    border-radius: 10px;
-    width: 20%;
-    
+    font-family: "ShadowsIntoLight";
 }
-*/
+
+a
+{
+    text-decoration: none;
+}
+
 .bouton
 {
     margin-top: 30px;
@@ -177,53 +194,12 @@ footer a
     color: #E2C44F;
     width: 50%;
     padding-top: 20px;
-    font-size: 20px;
+    font-size: 20px;    
 }
 
-.la_note
-{
-    font-family: "Devonshire-Regular";
-    color: #3c1218;
-}
+/* ---------------- menu la note enchantee -------------------- */
 
-.la_note h2
+.body_P1
 {
-    font-family: "DeliusUnicase-Bold";
-    color: #3c1218;
-}
-
-.le_chic
-{
-    font-family: "Montez-Regular";
-   
-}
-
-.le_chic h2
-{
-    font-family: "AbrilFatface";
-}
-
-.le_delice
-{
-    font-family: "Dancing Script";
-}
-
-.le_delice h2
-{
-    font-family: "ShadowsIntoLight";
-}
-
-.la_palette
-{
-    font-family: "KaushanScript-Regular";
-}
-
-.la_palette h2
-{
-    font-family: "ShadowsIntoLight";
-}
-
-a
-{
-    text-decoration: none;
+    background-color: #fcdfdb;
 }
