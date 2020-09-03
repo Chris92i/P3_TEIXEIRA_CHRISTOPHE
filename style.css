@@ -77,7 +77,7 @@ header
     margin-top: 0%;
     padding: 30px;
     background-color: #569c87;
-    color: #E2C44F;
+    color: #fdcb46;
     text-align: center;
     font-size: 50px;
     font-weight: bold;
@@ -108,12 +108,20 @@ article
     display: flex;
     flex-direction: column;
     margin: 15px 20px 15px 20px;
+    justify-items: center;
     text-align: center;
     padding-top: 120px;
     box-shadow: 1px 1px 10px #EEEEEE;
     
 }
 
+.icone_note
+{
+    max-width: calc((200px / 8));
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .la_note
 {
     background-color: #fcdfdb;
@@ -165,11 +173,9 @@ a
     text-decoration: none;
 }
 
-.vide
+h2
 {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
+    margin-top: 10px;
 }
 
 .bouton
@@ -188,7 +194,7 @@ a
 	border-radius:8px;
 	background: #569c87;
 	font: 30px Arial;
-    color:#E2C44F;
+    color:#fdcb46;
 
     }
 
@@ -198,9 +204,9 @@ footer
     width: 100%; 
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     background-color: #569c87;
-    color: #E2C44F;
-    text-align: center;
+    color: #fdcb46;
     position: sticky;  
     bottom: 0px;
     left: 0px;
@@ -209,10 +215,19 @@ footer
 
 footer a
 {
-    color: #E2C44F;
+    color: #fdcb46;
     width: 50%;
     padding-top: 20px;
-    font-size: 20px;  
+    font-size: 20px;
+    padding-left: 10px;  
+}
+
+footer a:nth-child(2)
+
+{
+    justify-content: flex-end;
+    text-align: right;
+    padding-right: 10px;
 }
 
 /* ---------------- menu P1 la note enchantee -------------------- */
