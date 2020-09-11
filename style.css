@@ -139,6 +139,9 @@ article
 {
     background-color: #FEF4FD;
     font-family: "Montez-Regular";
+    background: linear-gradient(#d8852e,#905bfd)
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip
 }
 
 .le_chic h2
