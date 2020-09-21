@@ -1,0 +1,22 @@
+{
+  "name": "p3_teixeira_christophe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass ./style.scss:./style.css --watch --style compressed",
+    "sass-test": "sass ./style.scss:./style.css --watch --style expanded",
+    "prefix": "postcss ./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chris92i/P3_TEIXEIRA_CHRISTOPHE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chris92i/P3_TEIXEIRA_CHRISTOPHE/issues"
+  },
+  "homepage": "https://github.com/Chris92i/P3_TEIXEIRA_CHRISTOPHE#readme"
+}
