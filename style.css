@@ -1,146 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* ---------------------------------------------- au dessus reset css d'Eric Meyers------------------------------------- */
-/* ------------------------ page d'accueil --------------------- */
-html, body {
-  height: 100%;
-}
-
-body {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  flex: auto;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-header {
-  height: 100px;
-  width: 100%;
-  margin-top: 0%;
-  padding: 30px;
-  background-color: #569c87;
-  color: #fdcb46;
-  text-align: center;
-  font-size: 50px;
-  font-weight: bold;
-}
-
-#main {
-  max-width: 480px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 50px;
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  justify-content: center;
-  background-color: white;
-}
-
-article {
-  height: 250px;
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  margin: 15px 20px 15px 20px;
-  justify-items: center;
-  text-align: center;
-  padding-top: 120px;
-  box-shadow: 1px 1px 10px #EEEEEE;
-}
-
-.icone_note {
-  max-width: calc((200px / 8));
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.la_note {
-  background-color: #fcdfdb;
-  font-family: "Devonshire-Regular";
-  color: #3c1218;
-}
-
-.la_note h2 {
-  font-family: "DeliusUnicase-Bold";
-  color: #3c1218;
-}
-
-.le_chic {
-  background-color: #FEF4FD;
-  font-family: "Montez-Regular";
-  /*background: linear-gradient(#d8852e,#905bfd)
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip*/
-}
-
-.le_chic h2 {
-  font-family: "AbrilFatface";
-}
-
-.le_delice {
-  background-color: #F9F9F9;
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:"";content:none}table{border-collapse:collapse;border-spacing:0}html,body{height:100%}@keyframes wiggle{from{transform:translateX(3px)}to{transform:translateX(-3px)}}body{height:100%;width:100%;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;flex:auto;margin-left:0px;margin-right:0px}header{height:100px;width:100%;margin-top:0%;padding:30px;background-color:#569c87;color:#fdcb46;text-align:center;font-size:50px;font-weight:bold}#main{max-width:480px;margin-left:20px;margin-right:20px;margin-top:50px;display:flex;flex-direction:row;flex-grow:1;flex-wrap:wrap;justify-content:space-between;justify-content:center;background-color:#fff}article{height:250px;width:200px;display:flex;flex-direction:column;margin:15px 20px 15px 20px;justify-items:center;text-align:center;padding-top:120px;box-shadow:1px 1px 10px #eee}.icone_note{max-width:calc((200px / 8));display:block;margin-left:auto;margin-right:auto}.la_note{background-color:#fcdfdb;font-family:"Devonshire-Regular";color:#3c1218}.zoom:hover{transform:scale(1.4)}.la_note h2{font-family:"DeliusUnicase-Bold";color:#3c1218}.le_chic{background-color:#fef4fd;font-family:"Montez-Regular"}.le_chic h2{font-family:"AbrilFatface"}.le_delice{background-color:#f9f9f9;font-family:"Dancing Script"}.le_delice h2{font-family:"ShadowsIntoLight"}.la_palette{background-color:#fcfffd;font-family:"KaushanScript-Regular"}.la_palette h2{font-family:"ShadowsIntoLight"}a{text-decoration:none}h2{margin-top:10px}.bouton{margin-top:30px;margin-bottom:20px;display:flex;width:100%;justify-content:center}.bouton a{border:none;padding:6px 30px 6px 30px;border-radius:8px;background:#569c87;font:30px Arial;color:#fdcb46}footer{height:50px;width:100%;display:flex;flex-direction:row;justify-content:flex-start;background-color:#569c87;color:#fdcb46;position:sticky;bottom:0px;left:0px;right:0px}footer a{color:#fdcb46;width:50%;padding-top:20px;font-size:20px;padding-left:10px}.test:hover{animation-name:wiggle;animation-duration:.5s}footer a:nth-child(2){justify-content:flex-end;text-align:right;padding-right:10px}.main_P1{background-color:#fcdfdb}.body_P1{background-color:#fef4fd}.body_P1{background-color:#f9f9f9}.body_P1{background-color:#fcfffd}.progress__bar{transform:scaleX(0);border:solid green}/*# sourceMappingURL=style.css.map */
+background-color: #F9F9F9;
   font-family: "Dancing Script";
 }
 
@@ -204,6 +63,11 @@ footer a {
   padding-left: 10px;
 }
 
+.test:hover {
+  animation-name: wiggle;
+  animation-duration: 0.5s;
+}
+
 footer a:nth-child(2) {
   justify-content: flex-end;
   text-align: right;
@@ -228,6 +92,11 @@ footer a:nth-child(2) {
 /* ---------------- menu P4 la palette  -------------------- */
 .body_P1 {
   background-color: #FCFFFD;
+}
+
+.progress__bar {
+  transform: scaleX(0);
+  border: solid green;
 }
 
 /*# sourceMappingURL=style.css.map */

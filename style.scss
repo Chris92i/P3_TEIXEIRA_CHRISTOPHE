@@ -55,6 +55,23 @@ html, body {
     height: 100%;
 }
 
+/* ------------- variables -------------------------------------*/
+
+$couleur_1 : #569c87;
+$couleur_2: #fdcb46;
+
+/* ------------- keyframe -------------------------------------*/
+
+
+@keyframes wiggle {
+    from {
+        transform: translateX(3px);
+    }
+    to {
+        transform: translateX(-3px);
+    }
+}
+
 body
 {
     height: 100%;
@@ -76,8 +93,8 @@ header
     width: 100%;
     margin-top: 0%;
     padding: 30px;
-    background-color: #569c87;
-    color: #fdcb46;
+    background-color: $couleur_1;
+    color: $couleur_2;
     text-align: center;
     font-size: 50px;
     font-weight: bold;
@@ -127,6 +144,10 @@ article
     background-color: #fcdfdb;
     font-family: "Devonshire-Regular";
     color: #3c1218;
+}
+
+.zoom:hover{
+    transform: scale(1.4);
 }
 
 .la_note h2
@@ -197,7 +218,7 @@ h2
 	border-radius:8px;
 	background: #569c87;
 	font: 30px Arial;
-    color:#fdcb46;
+    color: $couleur_2;
 
     }
 
@@ -208,8 +229,8 @@ footer
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: #569c87;
-    color: #fdcb46;
+    background-color: $couleur_1;
+    color: $couleur_2;
     position: sticky;  
     bottom: 0px;
     left: 0px;
@@ -218,11 +239,15 @@ footer
 
 footer a
 {
-    color: #fdcb46;
+    color: $couleur_2;
     width: 50%;
     padding-top: 20px;
     font-size: 20px;
     padding-left: 10px;  
+}
+.test:hover{
+    animation-name: wiggle;
+    animation-duration: .5s;
 }
 
 footer a:nth-child(2)
@@ -232,6 +257,10 @@ footer a:nth-child(2)
     text-align: right;
     padding-right: 10px;
 }
+
+
+
+
 
 /* ---------------- menu P1 la note enchantee -------------------- */
 
@@ -261,4 +290,13 @@ footer a:nth-child(2)
     background-color: #FCFFFD;
 }
 
+
+.progress
+
+{
+    &__bar{
+        transform: scaleX(0);
+        border: solid green;
+    }
+}
 
