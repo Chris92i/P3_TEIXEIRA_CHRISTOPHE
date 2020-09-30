@@ -268,11 +268,11 @@ footer a
 
 
 .mentions:hover{
-    animation: wiggle 100ms cubic-bezier(.4,.1,.6,.9) 3;
+    animation: wiggle .5s cubic-bezier(.4,.1,.6,.9) 3;
 }
 
 .contact:hover{
-    animation: wiggle 100ms cubic-bezier(.4,.1,.6,.9) 3 ;
+    animation: wiggle .5s cubic-bezier(.4,.1,.6,.9) 3 ;
 }
 
 footer a:nth-child(2)
