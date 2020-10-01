@@ -62,6 +62,9 @@ $couleur_2: #fdcb46;
 $couleur_back_la_note: #fcdfdb;
 $couleur_back_le_chic: #FEF4FD;
 $wiggle-intensity: 2%;
+$size: 1vh;
+$taille_point: 10px;
+
 
 /* ------------- keyframe -------------------------------------*/
 
@@ -85,8 +88,17 @@ $wiggle-intensity: 2%;
     }
 }
 
+@keyframes saut{
+    0% {
+        transform: translate();
+    }
+    100% {
+        
+    }
+}
 
-/* ------------- keyframe -------------------------------------*/
+
+/* ----------------------------------------------------------*/
 
 body
 {
@@ -281,6 +293,19 @@ footer a:nth-child(2)
     justify-content: flex-end;
     text-align: right;
     padding-right: 10px;
+}
+
+.loader{
+    width: $size*6;
+    height: $size*4;
+    display: flex;
+    justify-content: space-evenly;
+    &__point{
+        background-color: $couleur_2;
+        height: $taille_point;
+        width: $size;
+        border-radius: 50%;
+    }
 }
 
 
