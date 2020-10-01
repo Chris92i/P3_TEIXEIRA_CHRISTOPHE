@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass ./style.scss:./style.css --watch --style expanded",
     "sass-test": "sass ./style.scss:./style.css --watch --style expanded",
-    "prefix": "postcss ./style.css"
+    "prefix": "postcss ./style.css --use autoprefixer -d ./prefixed"
   },
   "repository": {
     "type": "git",
@@ -15,6 +15,7 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/Chris92i/P3_TEIXEIRA_CHRISTOPHE/issues"
   },
