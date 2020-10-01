@@ -78,7 +78,19 @@ html, body {
 }
 @keyframes saut {
   0% {
-    transform: translate();
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  75% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(20px);
   }
 }
 /* ----------------------------------------------------------*/
@@ -261,6 +273,22 @@ footer a:nth-child(2) {
   height: 10px;
   width: 1vh;
   border-radius: 50%;
+  animation: saut 1000ms backwards infinite;
+}
+.loader__point--1 {
+  animation-delay: 1000ms;
+}
+.loader__point--2 {
+  animation-delay: 2000ms;
+}
+.loader__point--3 {
+  animation-delay: 3000ms;
+}
+.loader__point--4 {
+  animation-delay: 4000ms;
+}
+.loader__point--5 {
+  animation-delay: 5000ms;
 }
 
 /* ---------------- menu P1 la note enchantee -------------------- */
