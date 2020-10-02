@@ -164,6 +164,10 @@ article {
   color: #3c1218;
 }
 
+.zoom {
+  transform: scale(1);
+  transition-duration: 0.7s;
+}
 .zoom:hover {
   transform: scale(1.4);
   opacity: 0.5;

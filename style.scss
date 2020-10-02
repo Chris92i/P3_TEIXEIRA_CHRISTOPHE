@@ -246,10 +246,16 @@ article
     color: #3c1218;
 }
 
-.zoom:hover{
-    transform: scale(1.4);
-    opacity: 0.5;
+
+.zoom{
+    transform: scale(1);
+    transition-duration: 0.7s;
+    &:hover{
+        transform: scale(1.4);
+        opacity: 0.5;
+    }
 }
+    
 
 .la_note h2
 {
