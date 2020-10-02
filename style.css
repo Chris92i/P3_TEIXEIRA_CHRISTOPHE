@@ -229,7 +229,7 @@ h2 {
   margin-top: 30px;
   margin-bottom: 20px;
   display: flex;
-  width: 100%;
+  width: 60%;
   justify-content: center;
 }
 .bouton .loader {
