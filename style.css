@@ -220,6 +220,12 @@ h2 {
   width: 100%;
   justify-content: center;
   */
+  border: none;
+  padding: 6px 30px 6px 30px;
+  border-radius: 8px;
+  background: #569c87;
+  font: 30px Arial;
+  color: #fdcb46;
   margin-top: 30px;
   margin-bottom: 20px;
   display: flex;
@@ -227,24 +233,27 @@ h2 {
   justify-content: center;
 }
 .bouton .loader {
-  opacity: 0;
+  visibility: hidden;
 }
 .bouton:hover .prochainement {
-  opacity: 0;
+  visibility: hidden;
+  position: absolute;
 }
 .bouton:hover .loader {
-  opacity: 1;
+  visibility: visible;
 }
 
+/*
 .bouton a {
-  border: none;
-  padding: 6px 30px 6px 30px;
-  border-radius: 8px;
-  background: #569c87;
-  font: 30px Arial;
-  color: #fdcb46;
-}
 
+    border:none;
+	padding:6px 30px 6px 30px;
+	border-radius:8px;
+	background: #569c87;
+	font: 30px Arial;
+    color: $couleur_2;
+    }
+*/
 footer {
   height: 50px;
   width: 100%;
@@ -268,11 +277,11 @@ footer a {
 }
 
 .mentions:hover {
-  animation: wiggle 0.5s cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
+  animation: wiggle 0.2s cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
 }
 
 .contact:hover {
-  animation: wiggle 0.5s cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
+  animation: wiggle 0.2s cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
 }
 
 footer a:nth-child(2) {

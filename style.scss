@@ -111,7 +111,22 @@ $anim-delay: $time / $number_point;
 
 /* -------------------- mixin  --------------------------------------*/
 
+@mixin degrade {
+    background-image: linear-gradient(to right, brown,blue);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+}
+
+
 @mixin btn {
+    border:none;
+	padding:6px 30px 6px 30px;
+	border-radius:8px;
+	background: #569c87;
+	font: 30px Arial;
+    color: $couleur_2;
+
     margin-top: 30px;
     margin-bottom: 20px;
     display: flex;
@@ -240,6 +255,7 @@ article
 {
     font-family: "DeliusUnicase-Bold";
     color: #3c1218;
+
 }
 
 .le_chic
@@ -299,19 +315,22 @@ h2
     */
     @include btn();
     .loader{
-        opacity: 0;
+        visibility: hidden;
     }
     &:hover{
         .prochainement {
-            opacity: 0;
+            visibility: hidden;
+            position: absolute;
         }
         .loader{
-            opacity: 1;
+            visibility: visible;
         }
     }
 
 }
 
+
+/*
 .bouton a {
     
     border:none;
@@ -321,6 +340,8 @@ h2
 	font: 30px Arial;
     color: $couleur_2;
     }
+*/
+
 
 footer
 {
@@ -348,11 +369,11 @@ footer a
 
 
 .mentions:hover{
-    animation: wiggle .5s cubic-bezier(.4,.1,.6,.9) 3;
+    animation: wiggle .2s cubic-bezier(.4,.1,.6,.9) 3;
 }
 
 .contact:hover{
-    animation: wiggle .5s cubic-bezier(.4,.1,.6,.9) 3 ;
+    animation: wiggle .2s cubic-bezier(.4,.1,.6,.9) 3 ;
 }
 
 footer a:nth-child(2)
