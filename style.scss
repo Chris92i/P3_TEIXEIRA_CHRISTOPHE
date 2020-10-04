@@ -372,19 +372,21 @@ footer a
     width: 50%;
     padding-top: 20px;
     font-size: 20px;
-    padding-left: 10px;  
+    padding-left: 10px;
+    display: flex;
 }
 
 
 .text_footer{
-
-    &:hover{
-    animation: toggle .2s ease-in-out 5;
+    float: left;
+    &:nth-child(2){
+        display: flex;
+        align-content: flex-end;
+        float: right;
     }
-}
-
-.contact:hover{
-    animation: toggle .2s ease-in-out 5 ;
+    &:hover{
+    animation: toggle .1s ease-in-out 5;
+    }
 }
 
 footer a:nth-child(2)

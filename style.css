@@ -278,14 +278,19 @@ footer a {
   padding-top: 20px;
   font-size: 20px;
   padding-left: 10px;
+  display: flex;
 }
 
+.text_footer {
+  float: left;
+}
+.text_footer:nth-child(2) {
+  display: flex;
+  align-content: flex-end;
+  float: right;
+}
 .text_footer:hover {
-  animation: toggle 0.2s ease-in-out 5;
-}
-
-.contact:hover {
-  animation: toggle 0.2s ease-in-out 5;
+  animation: toggle 0.1s ease-in-out 5;
 }
 
 footer a:nth-child(2) {
