@@ -69,11 +69,12 @@ html, body {
   }
 }
 @keyframes toggle {
-  from {
-    transform: rotate(15deg);
+  25% {
+    transform-origin: center;
+    transform: rotate(-10deg);
   }
-  to {
-    transform: rotate(-15deg);
+  75% {
+    transform: rotate(10deg);
   }
 }
 @keyframes saut {
@@ -120,11 +121,10 @@ header {
   font-weight: bold;
 }
 
-/*
-h1:hover{
-    animation: toggle .2s infinite ;
+h1:hover {
+  animation: toggle 0.2s infinite;
 }
-*/
+
 #main {
   max-width: 480px;
   margin-left: 20px;
@@ -280,12 +280,12 @@ footer a {
   padding-left: 10px;
 }
 
-.mentions:hover {
-  animation: wiggle 0.2s cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
+.text_footer:hover {
+  animation: toggle 0.2s ease-in-out 5;
 }
 
 .contact:hover {
-  animation: wiggle 0.2s cubic-bezier(0.4, 0.1, 0.6, 0.9) 3;
+  animation: toggle 0.2s ease-in-out 5;
 }
 
 footer a:nth-child(2) {

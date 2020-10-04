@@ -83,11 +83,13 @@ $anim-delay: $time / $number_point;
 
 
 @keyframes toggle {
-    from {
-        transform: rotate(15deg);
+    25% {
+        transform-origin: center;
+        transform: rotate(-10deg);
     }
-    to {
-        transform: rotate(-15deg);
+    75% {
+        // transform-origin: center;
+        transform: rotate(10deg);
     }
 }
 
@@ -195,11 +197,11 @@ header
     
 }
 
-/*
+
 h1:hover{
     animation: toggle .2s infinite ;
 }
-*/
+
 
 #main
 {
@@ -374,12 +376,15 @@ footer a
 }
 
 
-.mentions:hover{
-    animation: wiggle .2s cubic-bezier(.4,.1,.6,.9) 3;
+.text_footer{
+
+    &:hover{
+    animation: toggle .2s ease-in-out 5;
+    }
 }
 
 .contact:hover{
-    animation: wiggle .2s cubic-bezier(.4,.1,.6,.9) 3 ;
+    animation: toggle .2s ease-in-out 5 ;
 }
 
 footer a:nth-child(2)
