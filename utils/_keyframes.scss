@@ -1,0 +1,38 @@
+@keyframes wiggle {
+    25% {
+        transform: translateX($wiggle-intensity);
+    }
+    75% {
+        transform: translateX(-$wiggle-intensity);
+    }
+}
+
+
+@keyframes toggle {
+    25% {
+        transform-origin: center;
+        transform: rotate(-10deg);
+    }
+    75% {
+        // transform-origin: center;
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes saut{
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY($taille_point/2); 
+    }
+    50% {
+        transform: translateY($taille_point);
+    }
+    75%{
+        transform: translateY($taille_point * 0.5);
+    }
+    100% {
+        transform: translateY($taille_point * 0);
+    }
+}

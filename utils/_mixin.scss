@@ -1,0 +1,47 @@
+@mixin degrade {
+    background-image: linear-gradient(to right, brown,blue);
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+}
+
+
+@mixin btn {
+    border:none;
+	padding:6px 30px 6px 30px;
+	border-radius:8px;
+	background: $couleur_1;
+	font: 30px Arial;
+    color: $couleur_2;
+
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    width: 60%;
+    justify-content: center;
+}
+
+
+
+
+@mixin petit_point {
+    .loader{
+        width: $taille_point*6;
+        height: $taille_point*4;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        &__point{
+            background-color: $couleur_2;
+            height: $taille_point;
+            width: $taille_point;
+            border-radius: 50%;
+            animation: saut $time  infinite;
+            @for $i from 1 through $number_point {
+                &--#{$i} {
+                    animation-delay: $anim-delay * $i;
+                }
+            }
+        }
+    }
+}

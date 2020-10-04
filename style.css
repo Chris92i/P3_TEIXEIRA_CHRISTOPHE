@@ -53,13 +53,6 @@ table {
 }
 
 /* ---------------------------------------------- au dessus reset css d'Eric Meyers------------------------------------- */
-/* ------------------------ page d'accueil --------------------- */
-html, body {
-  height: 100%;
-}
-
-/* ------------- variables -------------------------------------*/
-/* ------------- keyframe -------------------------------------*/
 @keyframes wiggle {
   25% {
     transform: translateX(2%);
@@ -94,6 +87,13 @@ html, body {
     transform: translateY(0px);
   }
 }
+/* ------------------------ page d'accueil --------------------- */
+html, body {
+  height: 100%;
+}
+
+/* ------------- variables -------------------------------------*/
+/* ------------- keyframe -------------------------------------*/
 /* -------------------- mixin  --------------------------------------*/
 /* ----------------------------------------------------------*/
 body {
@@ -119,10 +119,6 @@ header {
   text-align: center;
   font-size: 50px;
   font-weight: bold;
-}
-
-h1:hover {
-  animation: toggle 0.2s infinite;
 }
 
 #main {
@@ -247,17 +243,6 @@ h2 {
   visibility: visible;
 }
 
-/*
-.bouton a {
-
-    border:none;
-	padding:6px 30px 6px 30px;
-	border-radius:8px;
-	background: #569c87;
-	font: 30px Arial;
-    color: $couleur_2;
-    }
-*/
 footer {
   height: 50px;
   width: 100%;
