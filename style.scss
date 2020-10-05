@@ -275,9 +275,7 @@ article
 {
     background-color: $couleur_back_le_chic;
     font-family: "Montez-Regular";
-    /*background: linear-gradient(#d8852e,#905bfd)
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip*/
+    
 }
 
 .le_chic h2
@@ -333,14 +331,19 @@ h2
     }
     &:hover{
         .prochainement {
-            visibility: hidden;
-            position: absolute;
+            visibility: visible;
+            position: relative;
         }
         .loader{
             visibility: visible;
         }
     }
 
+}
+
+.container
+{
+    margin-left: 15px;
 }
 
 // footer
@@ -405,7 +408,8 @@ footer a:nth-child(2)
         height: $taille_point;
         width: $taille_point;
         border-radius: 50%;
-        animation: saut $time  infinite;
+        // animation: saut $time  infinite;
+        animation: apparition $time  infinite;
         @for $i from 1 through $number_point {
             &--#{$i} {
                 animation-delay: $anim-delay * $i;

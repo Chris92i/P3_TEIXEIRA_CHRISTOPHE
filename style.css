@@ -88,6 +88,23 @@ table {
     transform: translateY(0px);
   }
 }
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 header {
   height: 100px;
   width: 100%;
@@ -192,9 +209,6 @@ article {
 .le_chic {
   background-color: #FEF4FD;
   font-family: "Montez-Regular";
-  /*background: linear-gradient(#d8852e,#905bfd)
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip*/
 }
 
 .le_chic h2 {
@@ -252,11 +266,15 @@ h2 {
   visibility: hidden;
 }
 .bouton:hover .prochainement {
-  visibility: hidden;
-  position: absolute;
+  visibility: visible;
+  position: relative;
 }
 .bouton:hover .loader {
   visibility: visible;
+}
+
+.container {
+  margin-left: 15px;
 }
 
 footer a {
@@ -301,7 +319,7 @@ footer a:nth-child(2) {
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  animation: saut 1000ms infinite;
+  animation: apparition 1000ms infinite;
 }
 .loader__point--1 {
   animation-delay: 333.3333333333ms;
