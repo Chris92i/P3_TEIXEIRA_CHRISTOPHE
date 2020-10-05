@@ -221,6 +221,7 @@ article {
 
 a {
   text-decoration: none;
+  color: #fdcb46;
 }
 
 h2 {
@@ -259,6 +260,7 @@ h2 {
 }
 
 footer a {
+  text-decoration: none;
   color: #fdcb46;
   width: 50%;
   padding-top: 20px;
