@@ -255,12 +255,18 @@ article
 
 
 .zoom{
+    text-decoration: none;
+    // color: transparent;
     transform: scale(1);
     transition-duration: 0.7s;
     &:hover{
         transform: scale(1.4);
         opacity: 0.5;
     }
+}
+
+.zoom1{
+    @include zoom_1();
 }
     
 
@@ -275,7 +281,9 @@ article
 {
     background-color: $couleur_back_le_chic;
     font-family: "Montez-Regular";
-    
+    // .back_chic{
+    //     background: linear-gradient(to left,brown, blue);
+    // }
 }
 
 .le_chic h2

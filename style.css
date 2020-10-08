@@ -105,6 +105,12 @@ table {
     opacity: 0;
   }
 }
+.degrade_text {
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 header {
   height: 100px;
   width: 100%;
@@ -193,10 +199,23 @@ article {
 }
 
 .zoom {
+  text-decoration: none;
   transform: scale(1);
   transition-duration: 0.7s;
 }
 .zoom:hover {
+  transform: scale(1.4);
+  opacity: 0.5;
+}
+
+.zoom1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(brown), to(#045FB4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1);
+  transition-duration: 0.7s;
+}
+.zoom1:hover {
   transform: scale(1.4);
   opacity: 0.5;
 }
