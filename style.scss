@@ -265,10 +265,17 @@ article
     }
 }
 
-.zoom1{
-    @include zoom_1();
+.zoom2{
+    @include zoom_2();
 }
-    
+ 
+.zoom3{
+    @include zoom_3();
+}
+
+.zoom4{
+    @include zoom_4();
+}
 
 .la_note h2
 {
@@ -326,13 +333,6 @@ h2
 
 .bouton
 {
-    /*
-    margin-top: 30px;
-    margin-bottom: 20px;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    */
     @include btn();
     .loader{
         visibility: hidden;
@@ -352,22 +352,10 @@ h2
 .container
 {
     margin-left: 15px;
+    display: flex;
+    align-items: baseline
 }
 
-// footer
-// {
-//     height: 50px;
-//     width: 100%; 
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: flex-start;
-//     background-color: $couleur_1;
-//     color: $couleur_2;
-//     position: sticky;  
-//     bottom: 0px;
-//     left: 0px;
-//     right: 0px;
-// }
 
 footer a
 {
@@ -404,18 +392,19 @@ footer a:nth-child(2)
 
 
 .loader{
-    /*
-    width: $taille_point*6;
-    */
     height: $taille_point*4;
     display: flex;
     justify-content: space-evenly;
-    align-content: center;
+    align-content: flex-end;
     &__point{
+        display: flex;
+        align-items: flex-end;
         background-color: $couleur_2;
         height: $taille_point;
         width: $taille_point;
         border-radius: 50%;
+        //si animation en points qui sautillent décommenter 
+        // lignes suivante et commenter celle d'apres
         // animation: saut $time  infinite;
         animation: apparition $time  infinite;
         @for $i from 1 through $number_point {

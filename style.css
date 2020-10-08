@@ -105,12 +105,6 @@ table {
     opacity: 0;
   }
 }
-.degrade_text {
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 header {
   height: 100px;
   width: 100%;
@@ -208,14 +202,47 @@ article {
   opacity: 0.5;
 }
 
-.zoom1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(brown), to(#045FB4));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.zoom2 {
+  color: #c77412;
   transform: scale(1);
   transition-duration: 0.7s;
 }
-.zoom1:hover {
+.zoom2 p {
+  background: linear-gradient(to right, #c77412, #905bfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.zoom2:hover {
+  transform: scale(1.4);
+  opacity: 0.5;
+}
+
+.zoom3 {
+  color: #83c0fa;
+  transform: scale(1);
+  transition-duration: 0.7s;
+}
+.zoom3 p {
+  background: linear-gradient(to right, #0431df, #83c0fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.zoom3:hover {
+  transform: scale(1.4);
+  opacity: 0.5;
+}
+
+.zoom4 {
+  color: #72bf56;
+  transform: scale(1);
+  transition-duration: 0.7s;
+}
+.zoom4 p {
+  background: linear-gradient(to right, #42973c, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.zoom4:hover {
   transform: scale(1.4);
   opacity: 0.5;
 }
@@ -262,13 +289,6 @@ h2 {
 }
 
 .bouton {
-  /*
-  margin-top: 30px;
-  margin-bottom: 20px;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  */
   border: none;
   padding: 6px 30px 6px 30px;
   border-radius: 8px;
@@ -294,6 +314,8 @@ h2 {
 
 .container {
   margin-left: 15px;
+  display: flex;
+  align-items: baseline;
 }
 
 footer a {
@@ -325,15 +347,14 @@ footer a:nth-child(2) {
 }
 
 .loader {
-  /*
-  width: $taille_point*6;
-  */
   height: 40px;
   display: flex;
   justify-content: space-evenly;
-  align-content: center;
+  align-content: flex-end;
 }
 .loader__point {
+  display: flex;
+  align-items: flex-end;
   background-color: #fdcb46;
   height: 10px;
   width: 10px;

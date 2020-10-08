@@ -48,20 +48,46 @@
 }
 
 
+@mixin zoom_2 {
+    p{
 
-
-.degrade_text {
-    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#045FB4));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+        background: linear-gradient(to right, #c77412 , #905bfd);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    color: #c77412;
+    transform: scale(1);
+    transition-duration: 0.7s;
+    &:hover{
+        transform: scale(1.4);
+        opacity: 0.5;
+    }
 }
 
+@mixin zoom_3 {
+    p{
 
-@mixin zoom_1 {
-    background: -webkit-gradient(linear, left top, left bottom, from(brown
-    ), to(#045FB4));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+        background: linear-gradient(to right, #0431df , #83c0fa);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    color: #83c0fa;
+    transform: scale(1);
+    transition-duration: 0.7s;
+    &:hover{
+        transform: scale(1.4);
+        opacity: 0.5;
+    }
+}
+
+@mixin zoom_4 {
+    p{
+
+        background: linear-gradient(to right, #42973c , #bfff7e);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    color: #72bf56;
     transform: scale(1);
     transition-duration: 0.7s;
     &:hover{
