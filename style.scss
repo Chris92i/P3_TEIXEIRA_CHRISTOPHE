@@ -268,6 +268,7 @@ footer a:nth-child(2)
     justify-content: space-evenly;
     align-content: flex-end;
     &__point{
+        margin-top: 60%;
         display: flex;
         align-items: flex-end;
         background-color: $couleur_2;
@@ -290,12 +291,18 @@ footer a:nth-child(2)
 
 
 
+
 /* ---------------- menu P1 la note enchantee -------------------- */
 
 .main_P1
 {
     background-color: #fcdfdb;
     
+}
+
+.container1{
+    display: flex;
+
 }
 
 /* ---------------- menu P2 le chic -------------------- */

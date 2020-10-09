@@ -362,6 +362,7 @@ footer a:nth-child(2) {
   align-content: flex-end;
 }
 .loader__point {
+  margin-top: 60%;
   display: flex;
   align-items: flex-end;
   background-color: #fdcb46;
@@ -383,6 +384,10 @@ footer a:nth-child(2) {
 /* ---------------- menu P1 la note enchantee -------------------- */
 .main_P1 {
   background-color: #fcdfdb;
+}
+
+.container1 {
+  display: flex;
 }
 
 /* ---------------- menu P2 le chic -------------------- */
