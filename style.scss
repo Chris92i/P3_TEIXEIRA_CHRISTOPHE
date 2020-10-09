@@ -120,10 +120,16 @@ body
 .la_note
 {
     background-color: $couleur_back_la_note;
-    font-family: "Devonshire-Regular";
-    color: #3c1218;
+    font-family: $font_la_note;
+    color: $color_la_note;
 }
 
+.la_note h2
+{
+    font-family: "DeliusUnicase-Bold";
+    color: #3c1218;
+
+}
 
 .zoom{
     text-decoration: none;
@@ -148,12 +154,6 @@ body
     @include zoom_4();
 }
 
-.la_note h2
-{
-    font-family: "DeliusUnicase-Bold";
-    color: #3c1218;
-
-}
 
 .le_chic
 {
@@ -294,15 +294,30 @@ footer a:nth-child(2)
 
 /* ---------------- menu P1 la note enchantee -------------------- */
 
-.main_P1
+#main_test
 {
-    background-color: #fcdfdb;
+    margin-left: 20px;
+    margin-right: 20px;
+    // margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    background-color: $couleur_back_la_note;
+    font-family: "DeliusUnicase-Bold";
+    color: #3c1218;
     
 }
 
 .container1{
     display: flex;
 
+}
+
+.intitule{
+    text-align: center;
 }
 
 /* ---------------- menu P2 le chic -------------------- */
