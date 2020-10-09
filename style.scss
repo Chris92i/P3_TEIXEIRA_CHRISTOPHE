@@ -83,22 +83,20 @@ body
 
 #main
 {
-    max-width: 480px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    justify-content: center;
-    background-color: white;
-    
+    &_home{
+        @include main_base();
+        margin-top: 50px;
+    }
+    &_p1{
+        margin-top: 10px;
+        @include main_base();
+    }
 }
+        
 
 
-article
+.la_note, .le_chic, .le_delice, .la_palette
+// article
 {
     height: 250px;
     width: 200px;
