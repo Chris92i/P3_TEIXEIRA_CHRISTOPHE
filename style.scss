@@ -142,17 +142,33 @@ body
     }
 }
 
-.zoom2{
-    @include zoom_2();
-}
- 
-.zoom3{
-    @include zoom_3();
-}
+@each $menu in $menus {
+    $i: index($menus, $menu);
+    $menu: map-get($menus, $i);
 
-.zoom4{
-    @include zoom_4();
+    .zoom#{$i} {
+        @include zoom(
+            map-get($menu, 'from'),
+            map-get($menu, 'to'),
+            map-get($menu, 'textColor')
+        );
+    }
 }
+//.zoom2{
+//    @include zoom_2();
+//}
+
+// .zoom2 {
+//     @include zoom($couleur_2, $couleur_3, $couleur_1);
+// }
+
+// .zoom3{
+//     @include zoom_3();
+// }
+
+// .zoom4{
+//     @include zoom_4();
+// }
 
 
 .le_chic

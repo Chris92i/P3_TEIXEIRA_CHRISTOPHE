@@ -66,6 +66,22 @@
 }
 
 
+@mixin zoom($from, $to, $textColor) {
+    p {
+        background: linear-gradient(to right, $from , $to);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    color: $textColor;
+    transform: scale(1);
+    transition-duration: 0.7s;
+    &:hover{
+        transform: scale(1.4);
+        opacity: 0.5;
+    }
+}
+
 @mixin zoom_2 {
     p{
 
@@ -113,3 +129,22 @@
         opacity: 0.5;
     }
 }
+
+
+// @mixin z_menu {
+//     p{
+
+//         background: linear-gradient(to right, (map-get($) $first_color) , (map-get($ ,$second_color));
+//         -webkit-background-clip: text;
+//         -webkit-text-fill-color: transparent;
+//     }
+//     color: $first_color;
+//     transform: scale(1);
+//     transition-duration: 0.7s;
+//     &:hover{
+//         transform: scale(1.4);
+//         opacity: 0.5;
+//     }
+// }
+
+

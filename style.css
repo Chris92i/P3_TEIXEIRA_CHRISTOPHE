@@ -216,6 +216,21 @@ body {
   opacity: 0.5;
 }
 
+.zoom1 {
+  color: #3c1218;
+  transform: scale(1);
+  transition-duration: 0.7s;
+}
+.zoom1 p {
+  background: linear-gradient(to right, #3c1218, #3c1218);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.zoom1:hover {
+  transform: scale(1.4);
+  opacity: 0.5;
+}
+
 .zoom2 {
   color: #c77412;
   transform: scale(1);
@@ -232,7 +247,7 @@ body {
 }
 
 .zoom3 {
-  color: #83c0fa;
+  color: #0431df;
   transform: scale(1);
   transition-duration: 0.7s;
 }
@@ -247,7 +262,7 @@ body {
 }
 
 .zoom4 {
-  color: #72bf56;
+  color: #42973c;
   transform: scale(1);
   transition-duration: 0.7s;
 }
