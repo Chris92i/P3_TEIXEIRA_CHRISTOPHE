@@ -82,69 +82,9 @@
     }
 }
 
-@mixin zoom_2 {
-    p{
-
-        background: linear-gradient(to right, #c77412 , #905bfd);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    color: #c77412;
-    transform: scale(1);
-    transition-duration: 0.7s;
-    &:hover{
-        transform: scale(1.4);
-        opacity: 0.5;
-    }
-}
-
-@mixin zoom_3 {
-    p{
-
-        background: linear-gradient(to right, #0431df , #83c0fa);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    color: #83c0fa;
-    transform: scale(1);
-    transition-duration: 0.7s;
-    &:hover{
-        transform: scale(1.4);
-        opacity: 0.5;
-    }
-}
-
-@mixin zoom_4 {
-    p{
-
-        background: linear-gradient(to right, #42973c , #bfff7e);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    color: #72bf56;
-    transform: scale(1);
-    transition-duration: 0.7s;
-    &:hover{
-        transform: scale(1.4);
-        opacity: 0.5;
-    }
-}
 
 
-// @mixin z_menu {
-//     p{
 
-//         background: linear-gradient(to right, (map-get($) $first_color) , (map-get($ ,$second_color));
-//         -webkit-background-clip: text;
-//         -webkit-text-fill-color: transparent;
-//     }
-//     color: $first_color;
-//     transform: scale(1);
-//     transition-duration: 0.7s;
-//     &:hover{
-//         transform: scale(1.4);
-//         opacity: 0.5;
-//     }
-// }
+
 
 
