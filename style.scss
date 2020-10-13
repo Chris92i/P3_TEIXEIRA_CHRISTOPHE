@@ -101,8 +101,11 @@ a
 .la_note, .le_chic, .le_delice, .la_palette
 // article
 {
-    height: 250px;
-    width: 200px;
+    // height: 250px;
+    // width: 200px;
+    // height: calc((2 * width));
+    height: calc((width + 20%));
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 15px 20px 15px 20px;
@@ -225,9 +228,15 @@ h2
 
 }
 
+.prochainement
+{
+    align-content: center;
+}
+
 .container
 {
-    margin-left: 15px;
+    margin-left: 0px;
+    padding-left: 0px;
     display: flex;
     align-items: baseline
 }
@@ -235,6 +244,7 @@ h2
 
 footer a
 {
+    justify-content: flex-start;
     text-decoration: none;
     color: $couleur_2;
     width: 50%;
