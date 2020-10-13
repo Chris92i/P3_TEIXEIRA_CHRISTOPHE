@@ -93,7 +93,10 @@ body
     }
 }
         
-
+a
+{
+    @include case();
+}
 
 .la_note, .le_chic, .le_delice, .la_palette
 // article

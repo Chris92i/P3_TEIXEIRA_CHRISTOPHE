@@ -150,30 +150,34 @@ body {
 }
 
 #main_home {
-  max-width: 480px;
+  max-width: 70%;
   margin-left: 20px;
   margin-right: 20px;
+  padding-left: 20%;
+  padding-right: 20%;
   display: flex;
   flex-direction: row;
   flex-grow: 1;
   flex-wrap: wrap;
-  justify-content: space-between;
-  justify-content: center;
   background-color: white;
   margin-top: 50px;
 }
 #main_p1 {
   margin-top: 10px;
-  max-width: 480px;
+  max-width: 70%;
   margin-left: 20px;
   margin-right: 20px;
+  padding-left: 20%;
+  padding-right: 20%;
   display: flex;
   flex-direction: row;
   flex-grow: 1;
   flex-wrap: wrap;
-  justify-content: space-between;
-  justify-content: center;
   background-color: white;
+}
+
+a {
+  width: 50%;
 }
 
 .la_note, .le_chic, .le_delice, .la_palette {

@@ -1,18 +1,20 @@
 @mixin main_base {
-    max-width: 480px;
+    max-width: 70%;
     margin-left: 20px;
     margin-right: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
     // margin-top: 50px;
     display: flex;
     flex-direction: row;
     flex-grow: 1;
     flex-wrap: wrap;
-    justify-content: space-between;
-    justify-content: center;
     background-color: white;
 }
 
-
+@mixin case {
+    width: 50%;
+}
 
 
 
