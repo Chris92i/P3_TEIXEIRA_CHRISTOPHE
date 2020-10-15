@@ -120,7 +120,7 @@ header {
 }
 
 footer {
-  height: 50px;
+  height: 8%;
   width: 100%;
   display: flex;
   flex-direction: row;
