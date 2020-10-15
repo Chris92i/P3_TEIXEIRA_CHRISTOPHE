@@ -1,5 +1,6 @@
 @mixin main_base {
     max-width: 70%;
+    height: 100%;
     margin-left: 20px;
     margin-right: 20px;
     padding-left: 20%;
@@ -7,7 +8,7 @@
     // margin-top: 50px;
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
+    // flex-grow: 1;
     flex-wrap: wrap;
     background-color: white;
 }
@@ -45,6 +46,7 @@
     margin-right: auto;
     display: flex;
     width: 60%;
+    height: 5%;
     justify-content: center;
 }
 
