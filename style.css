@@ -106,10 +106,12 @@ table {
   }
 }
 header {
-  height: 100px;
+  height: 15%;
   width: 100%;
-  margin-top: 0%;
-  padding: 30px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #569c87;
   color: #fdcb46;
   text-align: center;
@@ -178,6 +180,7 @@ body {
 
 a {
   width: 50%;
+  height: calc((100% / 3) + 10%);
   display: flex;
   align-content: center;
   margin-left: auto;
@@ -186,14 +189,14 @@ a {
 }
 
 .la_note, .le_chic, .le_delice, .la_palette {
-  height: calc((width + 20%));
+  height: 90%;
   width: 100%;
   display: flex;
   flex-direction: column;
   margin: 15px 20px 15px 20px;
   justify-items: center;
   text-align: center;
-  padding-top: 120px;
+  align-items: center;
   box-shadow: 1px 1px 10px #EEEEEE;
 }
 
@@ -223,6 +226,10 @@ a {
 .zoom:hover {
   transform: scale(1.4);
   opacity: 0.5;
+}
+
+.zoom, .zoom2, .zoom3, .zoom4 {
+  margin: auto;
 }
 
 .zoom1 {

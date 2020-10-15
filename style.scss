@@ -104,14 +104,15 @@ a
     // height: 250px;
     // width: 200px;
     // height: calc((2 * width));
-    height: calc((width + 20%));
+    height: 90%;
     width: 100%;
     display: flex;
     flex-direction: column;
     margin: 15px 20px 15px 20px;
     justify-items: center;
     text-align: center;
-    padding-top: 120px;
+    // padding-top: 120px;
+    align-items: center;
     box-shadow: 1px 1px 10px #EEEEEE;
     
 }
@@ -148,6 +149,10 @@ a
     }
 }
 
+.zoom, .zoom2, .zoom3, .zoom4{
+    margin: auto;
+
+}
 @each $menu in $menus {
     $i: index($menus, $menu);
     $menu: map-get($menus, $i);
