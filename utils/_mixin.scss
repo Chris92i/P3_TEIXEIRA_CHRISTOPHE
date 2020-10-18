@@ -14,9 +14,10 @@
 }
 
 @mixin case {
-    width: 50%;
+    width: 40%;
     height: calc((100% / 3) + 10%);
     display: flex;
+    flex-direction: row;
     align-content: center;
     margin-left: auto;
     margin-right: auto;
