@@ -398,6 +398,7 @@ footer a:nth-child(2) {
   display: flex;
   justify-content: space-evenly;
   align-content: flex-end;
+  margin-left: 10px;
 }
 .loader__point {
   margin-top: 60%;
