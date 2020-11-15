@@ -424,16 +424,15 @@ footer a:nth-child(2) {
 .titrePage {
   display: flex;
   height: 10%;
+  width: 100%;
+  background-color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: #3c1218;
   font-size: 3vh;
-  padding: auto;
-  vertical-align: middle;
-  justify-items: middle;
 }
 
-#main_test {
+#main_menu {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 2%;
@@ -448,12 +447,15 @@ footer a:nth-child(2) {
   color: #3c1218;
 }
 
-.container1 {
+.carte {
   display: flex;
   flex-direction: column;
+  padding: 30px;
 }
 
 .headerMenu {
+  background-color: white;
+  font-size: inherit;
   width: 100%;
   height: 10%;
   text-align: center;
@@ -461,20 +463,27 @@ footer a:nth-child(2) {
 
 .entree, .plats, .dessert {
   height: 30%;
+  flex-direction: row;
+}
+
+.ligne {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: auto;
+}
+.ligne p {
+  display: flex;
+  justify-content: flex-start;
+}
+.ligne :nth-child(2) {
+  display: inline-flex;
+  justify-content: flex-end;
 }
 
 .intitule {
   text-align: center;
-}
-.intitule h1 {
-  color: inherit;
-  text-decoration: none;
-  background: linear-gradient(to top, #3c1218, 0%, #3c1218 2px, transparent 5px);
-  background-size: 0 100%;
-  transition: background-size 0.3s;
-}
-.intitule h1:hover {
-  background-size: 100% 100%;
 }
 
 /* ---------------- menu P2 le chic -------------------- */
