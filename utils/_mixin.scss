@@ -99,7 +99,10 @@
     
 }
 
-
+@mixin carte () {
+    background-color: $backgroundColor;
+    
+}
 
 
 

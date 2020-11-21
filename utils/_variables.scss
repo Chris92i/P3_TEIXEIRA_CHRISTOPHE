@@ -42,8 +42,8 @@ $menus: (
         from: $couleur_4,
         to: $couleur_4,
         textColor: $couleur_4,
-        textFont1: "Devonshire-Regular",
-        textFont2: "Devonshire-Bold",
+        textFont1: $font_la_note,
+        textFont2: $font_la_note2,
         backgroundColor: $couleur_3
     ),
     2: (
@@ -52,8 +52,8 @@ $menus: (
         textColor: $couleur_5,
         ecriture_1: $font_le_chic,
         ecriture_2: $font_le_chic_2,
-        textFont1: "Devonshire-Regular",
-        textFont2: "Devonshire-Bold",
+        // textFont1: "Devonshire-Regular",
+        // textFont2: "Devonshire-Bold",
         backgroundColor: $couleur_3
     ),
     3: (
@@ -62,8 +62,8 @@ $menus: (
         textColor: $couleur_7,
         ecriture_1: $font_le_delice,
         ecriture_2: $font_le_delice_2,
-        textFont1: "Devonshire-Regular",
-        textFont2: "Devonshire-Bold",
+        // textFont1: "Devonshire-Regular",
+        // textFont2: "Devonshire-Bold",
         backgroundColor: $couleur_3
     ),
     4: (
@@ -72,8 +72,8 @@ $menus: (
         textColor: $couleur_9,
         ecriture_1: $font_la_palette,
         ecriture_2: $font_la_palette_2,
-        textFont1: "Devonshire-Regular",
-        textFont2: "Devonshire-Bold",
+        // textFont1: "Devonshire-Regular",
+        // textFont2: "Devonshire-Bold",
         backgroundColor: $couleur_3
     )
 );
