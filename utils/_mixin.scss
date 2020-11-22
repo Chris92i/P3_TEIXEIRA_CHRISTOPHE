@@ -95,14 +95,18 @@
     }
 }
 
-@each $var in list {
+
+@mixin surligne () {
+    :hover{
+        // text-decoration: underline;
+        background-size: 100% 100%;
+    }
+
     
 }
 
-@mixin carte () {
-    background-color: $backgroundColor;
-    
-}
+
+
 
 
 
