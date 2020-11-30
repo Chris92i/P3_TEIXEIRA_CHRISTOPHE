@@ -79,18 +79,22 @@
 }
 
 
-@mixin zoom($from, $to, $textColor) {
+@mixin zoom($from, $to, $textColor, $textFont1, $textFont2, $backgroundColor) {
     p {
         background: linear-gradient(to right, $from , $to);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-family: $textFont1;
     }
-
+    h2{
+        font-family: $textFont2;
+    }
+    background-color: $backgroundColor;
     color: $textColor;
     transform: scale(1);
     transition-duration: 0.7s;
     &:hover{
-        transform: scale(1.4);
+        transform: scale(1.2);
         opacity: 0.5;
     }
 }
@@ -106,11 +110,14 @@
 }
 
 @mixin carte($backgroundColor, $textFont1, $textFont2, $textColor ) {
-    background: $backgroundColor;
-    font-family: $textFont2;
+    background-color: $backgroundColor;
     color: $textColor;
-    h1{
+    
+    p{
         font-family: $textFont1;
+    }
+    h1{
+        font-family: $textFont2;
     }
 }
 

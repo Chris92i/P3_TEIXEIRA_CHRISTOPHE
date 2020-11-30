@@ -56,7 +56,8 @@ table {
 @import "./utils/mixin";
 @import "./layouts/header";
 @import "./layouts/footer";
-@import "../vendors/fontawesome-free-5.14.0-web/css/all.css";
+@import "./vendors/fontawesome-free-5.14.0-web/css/all.css";
+@import "./base/Font.scss";
 
 
 /* ------------------------ page d'accueil --------------------- */
@@ -99,12 +100,16 @@ body
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    a{
+        @include case(); 
+    }
 }
 
-.cartes a
-{
-    @include case();
+
+@each $menu in $menus {
+    
 }
+
 
 .la_note, .le_chic, .le_delice, .la_palette
 // article
@@ -133,26 +138,25 @@ body
     margin-left: auto;
     margin-right: auto;
 }
-.la_note 
-{
-    background-color: $couleur_back_la_note;
-    font-family: $font_la_note;
-    color: $color_la_note;
-    p{
-        font-family: "evonshire-Regular";
-    }
-}
+// .la_note 
+// {
+//     background-color: $couleur_back_la_note;
+//     font-family: $font_la_note;
+//     color: $color_la_note;
+//     p{
+//         font-family: "Devonshire-Regular";
+//     }
+// }
 
-.la_note h2
-{
-    font-family: "DeliusUnicase-Bold";
-    color: #3c1218;
+// .la_note h2
+// {
+//     font-family: "DeliusUnicase-Bold";
+//     color: #3c1218;
 
-}
+// }
 
 .zoom{
-    text-decoration: none;
-    // color: transparent;
+    // text-decoration: none;
     transform: scale(1);
     transition-duration: 0.7s;
     &:hover{
@@ -169,11 +173,33 @@ body
     $i: index($menus, $menu);
     $menu: map-get($menus, $i);
 
+    .carte-#{map-get($menu, 'resto')}{
+        height: 100%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        margin: 15px 20px 15px 20px;
+        justify-items: center;
+        text-align: center;
+        // padding-top: 120px;
+        align-items: center;
+        box-shadow: 1px 1px 10px #EEEEEE;
+        @include carte(
+            map-get($menu, 'backgroundColor'),
+            map-get($menu, 'textColor'),
+            map-get($menu, 'textFont1'),
+            map-get($menu, 'textFont2')
+        )
+    }
+
     .zoom#{$i} {
         @include zoom(
             map-get($menu, 'from'),
             map-get($menu, 'to'),
-            map-get($menu, 'textColor')
+            map-get($menu, 'textColor'),
+            map-get($menu, 'textFont1'),
+            map-get($menu, 'textFont2'),
+            map-get($menu, 'backgroundColor')
         );
     }
 }
@@ -189,27 +215,27 @@ body
     // }
 }
 
-.le_chic h2
-{
-    font-family: "AbrilFatface";
-}
+// .le_chic h2
+// {
+//     font-family: "AbrilFatface";
+// }
 
-.le_delice
-{
-    background-color: #F9F9F9;
-    font-family: "Dancing Script";
-}
+// .le_delice
+// {
+//     background-color: #F9F9F9;
+//     font-family: "Dancing Script";
+// }
 
-.le_delice h2, .la_palette h2
-{
-    font-family: "ShadowsIntoLight";
-}
+// .le_delice h2, .la_palette h2
+// {
+//     font-family: "ShadowsIntoLight";
+// }
 
-.la_palette
-{
-    background-color: #FCFFFD;
-    font-family: "KaushanScript-Regular";
-}
+// .la_palette
+// {
+//     background-color: #FCFFFD;
+//     font-family: "KaushanScript-Regular";
+// }
 
 a
 {
@@ -391,7 +417,7 @@ footer a:nth-child(2)
     width: 100%;
     height: 10%;
     text-align: center;  
-
+    
 }
 
 

@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import "../vendors/fontawesome-free-5.14.0-web/css/all.css";
+@import "./vendors/fontawesome-free-5.14.0-web/css/all.css";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -134,6 +134,34 @@ footer {
   right: 0px;
 }
 
+@font-face {
+  font-family: "Devonshire-Regular";
+  src: url("../Font/Devonshire/Devonshire-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "DeliusUnicase-Bold";
+  src: url("../Font/Delius_Unicase/DeliusUnicase-Bold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "AbrilFatface";
+  src: url("../Font/Abril_Fatface/AbrilFatface-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Montez-Regular";
+  src: url("../Font/Montez/Montez-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Dancing Script";
+  src: url("../Font/Dancing_Script/DancingScript-VariableFont_wght.ttf") format("ttf");
+}
+@font-face {
+  font-family: "ShadowsIntoLight";
+  src: url("../Font/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "KaushanScript-Regular";
+  src: url("../Font/Kaushan_Script/KaushanScript-Regular.ttf") format("ttf");
+}
 /* ------------------------ page d'accueil --------------------- */
 html, body {
   height: 100%;
@@ -186,7 +214,6 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
-
 .cartes a {
   width: 40%;
   height: calc((100% / 3) + 10%);
@@ -217,22 +244,7 @@ body {
   margin-right: auto;
 }
 
-.la_note {
-  background-color: #fcdfdb;
-  font-family: "Devonshire-Regular";
-  color: #3c1218;
-}
-.la_note p {
-  font-family: "evonshire-Regular";
-}
-
-.la_note h2 {
-  font-family: "DeliusUnicase-Bold";
-  color: #3c1218;
-}
-
 .zoom {
-  text-decoration: none;
   transform: scale(1);
   transition-duration: 0.7s;
 }
@@ -245,7 +257,28 @@ body {
   margin: auto;
 }
 
+.carte-La-note {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 20px 15px 20px;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  box-shadow: 1px 1px 10px #EEEEEE;
+  background-color: #fcdfdb;
+  color: "DeliusUnicase-Bold";
+}
+.carte-La-note p {
+  font-family: #3c1218;
+}
+.carte-La-note h1 {
+  font-family: "Devonshire-Regular";
+}
+
 .zoom1 {
+  background-color: #fcdfdb;
   color: #3c1218;
   transform: scale(1);
   transition-duration: 0.7s;
@@ -254,13 +287,38 @@ body {
   background: linear-gradient(to right, #3c1218, #3c1218);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "Devonshire-Regular";
+}
+.zoom1 h2 {
+  font-family: "DeliusUnicase-Bold";
 }
 .zoom1:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
   opacity: 0.5;
 }
 
+.carte-le-chic {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 20px 15px 20px;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  box-shadow: 1px 1px 10px #EEEEEE;
+  background-color: #FEF4FD;
+  color: "Montez-Regular";
+}
+.carte-le-chic p {
+  font-family: #c77412;
+}
+.carte-le-chic h1 {
+  font-family: "AbrilFatface";
+}
+
 .zoom2 {
+  background-color: #FEF4FD;
   color: #c77412;
   transform: scale(1);
   transition-duration: 0.7s;
@@ -269,13 +327,38 @@ body {
   background: linear-gradient(to right, #c77412, #905bfd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "AbrilFatface";
+}
+.zoom2 h2 {
+  font-family: "Montez-Regular";
 }
 .zoom2:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
   opacity: 0.5;
 }
 
+.carte-le-delice {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 20px 15px 20px;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  box-shadow: 1px 1px 10px #EEEEEE;
+  background-color: #fcdfdb;
+  color: "ShadowsIntoLight";
+}
+.carte-le-delice p {
+  font-family: #0431df;
+}
+.carte-le-delice h1 {
+  font-family: "Dancing Script";
+}
+
 .zoom3 {
+  background-color: #fcdfdb;
   color: #0431df;
   transform: scale(1);
   transition-duration: 0.7s;
@@ -284,13 +367,38 @@ body {
   background: linear-gradient(to right, #0431df, #83c0fa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script";
+}
+.zoom3 h2 {
+  font-family: "ShadowsIntoLight";
 }
 .zoom3:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
   opacity: 0.5;
 }
 
+.carte-la-palette {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 20px 15px 20px;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+  box-shadow: 1px 1px 10px #EEEEEE;
+  background-color: #fcdfdb;
+  color: "ShadowsIntoLight";
+}
+.carte-la-palette p {
+  font-family: #42973c;
+}
+.carte-la-palette h1 {
+  font-family: "KaushanScript-Regular";
+}
+
 .zoom4 {
+  background-color: #fcdfdb;
   color: #42973c;
   transform: scale(1);
   transition-duration: 0.7s;
@@ -299,33 +407,19 @@ body {
   background: linear-gradient(to right, #42973c, #bfff7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "KaushanScript-Regular";
+}
+.zoom4 h2 {
+  font-family: "ShadowsIntoLight";
 }
 .zoom4:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
   opacity: 0.5;
 }
 
 .le_chic {
   background-color: #FEF4FD;
   font-family: "Montez-Regular";
-}
-
-.le_chic h2 {
-  font-family: "AbrilFatface";
-}
-
-.le_delice {
-  background-color: #F9F9F9;
-  font-family: "Dancing Script";
-}
-
-.le_delice h2, .la_palette h2 {
-  font-family: "ShadowsIntoLight";
-}
-
-.la_palette {
-  background-color: #FCFFFD;
-  font-family: "KaushanScript-Regular";
 }
 
 a {

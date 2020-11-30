@@ -8,6 +8,8 @@ $couleur_7: #0431df;
 $couleur_8: #83c0fa;
 $couleur_9: #42973c;
 $couleur_10: #bfff7e;
+$couleur_11: #FEF4FD;
+$couleur_12: #fcdfdb;
 
 
 $couleur_back_la_note: #fcdfdb;
@@ -31,10 +33,10 @@ $font_la_palette: "KaushanScript-Regular";
 $font_la_palette_2: "ShadowsIntoLight";
 
 
-$note: (
-    first_color: $couleur_5,
-    second_color: $couleur_6
-);
+// $note: (
+//     first_color: $couleur_5,
+//     second_color: $couleur_6
+// );
 
 
 $menus: (
@@ -44,7 +46,8 @@ $menus: (
         textColor: $couleur_4,
         textFont1: $font_la_note,
         textFont2: $font_la_note2,
-        backgroundColor: $couleur_3
+        backgroundColor: #fcdfdb,
+        resto: 'La-note'
     ),
     2: (
         from: $couleur_5,
@@ -54,7 +57,8 @@ $menus: (
         // ecriture_2: $font_le_chic_2,
         textFont1: $font_le_chic,
         textFont2: $font_le_chic_2,
-        backgroundColor: $couleur_3
+        backgroundColor: $couleur_11,
+        resto: 'le-chic'
     ),
     3: (
         from: $couleur_7,
@@ -64,7 +68,8 @@ $menus: (
         // ecriture_2: $font_le_delice_2,
         textFont1: $font_le_delice,
         textFont2: $font_le_delice_2,
-        backgroundColor: $couleur_3
+        backgroundColor: $couleur_3,
+        resto: 'le-delice'
     ),
     4: (
         from: $couleur_9,
@@ -74,7 +79,8 @@ $menus: (
         // ecriture_2: $font_la_palette_2,
         textFont1: $font_la_palette,
         textFont2: $font_la_palette_2,
-        backgroundColor: $couleur_3
+        backgroundColor: $couleur_3,
+        resto: 'la-palette'
     )
 );
 
