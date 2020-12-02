@@ -88,10 +88,6 @@ body
         @include main_base();
         margin-top: 50px;
     }
-    // &_p1{
-    //     margin-top: 10px;
-    //     @include main_base();
-    // }
 }
 
 .cartes{
@@ -111,20 +107,20 @@ body
 }
 
 
-.la_note, .le_chic, .le_delice, .la_palette
-{
-    height: 100%;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    margin: 15px 20px 15px 20px;
-    justify-items: center;
-    text-align: center;
-    // padding-top: 120px;
-    align-items: center;
-    box-shadow: 1px 1px 10px #EEEEEE;
+// .la_note, .le_chic, .le_delice, .la_palette
+// {
+//     height: 100%;
+//     width: 70%;
+//     display: flex;
+//     flex-direction: column;
+//     margin: 15px 20px 15px 20px;
+//     justify-items: center;
+//     text-align: center;
+//     // padding-top: 120px;
+//     align-items: center;
+//     box-shadow: 1px 1px 10px #EEEEEE;
     
-}
+// }
 
 
 
@@ -134,23 +130,18 @@ body
     display: flex;
     margin-left: auto;
     margin-right: auto;
+
+}
+
+.fa-music{
+    background: linear-gradient(to right, #f04b5e , #f78f6a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2em;
 }
 
 
-.zoom{
-    // text-decoration: none;
-    transform: scale(1);
-    transition-duration: 0.7s;
-    &:hover{
-        transform: scale(1.4);
-        opacity: 0.5;
-    }
-}
 
-.zoom, .zoom2, .zoom3, .zoom4{
-    margin: auto;
-
-}
 @each $menu in $menus {
     $i: index($menus, $menu);
     $menu: map-get($menus, $i);

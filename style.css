@@ -162,6 +162,10 @@ footer {
   font-family: "KaushanScript-Regular";
   src: url("./Font/Kaushan_Script/KaushanScript-Regular.ttf");
 }
+@font-face {
+  font-family: "PTSerif-Regular";
+  src: url("./Font/PT_Serif/PTSerif-Regular");
+}
 /* ------------------------ page d'accueil --------------------- */
 html, body {
   height: 100%;
@@ -212,18 +216,6 @@ body {
   justify-content: space-around;
 }
 
-.la_note, .le_chic, .le_delice, .la_palette {
-  height: 100%;
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  margin: 15px 20px 15px 20px;
-  justify-items: center;
-  text-align: center;
-  align-items: center;
-  box-shadow: 1px 1px 10px #EEEEEE;
-}
-
 .testIcone {
   max-width: calc((200px / 8));
   display: flex;
@@ -231,17 +223,11 @@ body {
   margin-right: auto;
 }
 
-.zoom {
-  transform: scale(1);
-  transition-duration: 0.7s;
-}
-.zoom:hover {
-  transform: scale(1.4);
-  opacity: 0.5;
-}
-
-.zoom, .zoom2, .zoom3, .zoom4 {
-  margin: auto;
+.fa-music {
+  background: linear-gradient(to right, #f04b5e, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2em;
 }
 
 .carte-La-note {
@@ -265,6 +251,7 @@ body {
 }
 
 .zoom1 {
+  margin: auto;
   background-color: #fcdfdb;
   color: #3c1218;
   transform: scale(1);
@@ -301,10 +288,11 @@ body {
   font-family: "AbrilFatface";
 }
 .carte-le-chic h2 {
-  font-family: "Montez-Regular";
+  font-family: "PTSerif-Regular";
 }
 
 .zoom2 {
+  margin: auto;
   background-color: #FEF4FD;
   color: #c77412;
   transform: scale(1);
@@ -317,7 +305,7 @@ body {
   font-family: "AbrilFatface";
 }
 .zoom2 h2 {
-  font-family: "Montez-Regular";
+  font-family: "PTSerif-Regular";
 }
 .zoom2:hover {
   transform: scale(1.2);
@@ -345,6 +333,7 @@ body {
 }
 
 .zoom3 {
+  margin: auto;
   background-color: #F9F9F9;
   color: #0431df;
   transform: scale(1);
@@ -385,6 +374,7 @@ body {
 }
 
 .zoom4 {
+  margin: auto;
   background-color: #FCFFFD;
   color: #42973c;
   transform: scale(1);

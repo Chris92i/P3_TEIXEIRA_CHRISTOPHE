@@ -80,6 +80,7 @@
 
 
 @mixin zoom($from, $to, $textColor, $textFont1, $textFont2, $backgroundColor) {
+    margin: auto;
     p {
         background: linear-gradient(to right, $from , $to);
         -webkit-background-clip: text;
