@@ -88,10 +88,10 @@ body
         @include main_base();
         margin-top: 50px;
     }
-    &_p1{
-        margin-top: 10px;
-        @include main_base();
-    }
+    // &_p1{
+    //     margin-top: 10px;
+    //     @include main_base();
+    // }
 }
 
 .cartes{
@@ -112,11 +112,7 @@ body
 
 
 .la_note, .le_chic, .le_delice, .la_palette
-// article
 {
-    // height: 250px;
-    // width: 200px;
-    // height: calc((2 * width));
     height: 100%;
     width: 70%;
     display: flex;
@@ -130,7 +126,8 @@ body
     
 }
 
-// .icone_note
+
+
 .testIcone
 {
     max-width: calc((200px / 8));
@@ -138,22 +135,7 @@ body
     margin-left: auto;
     margin-right: auto;
 }
-// .la_note 
-// {
-//     background-color: $couleur_back_la_note;
-//     font-family: $font_la_note;
-//     color: $color_la_note;
-//     p{
-//         font-family: "Devonshire-Regular";
-//     }
-// }
 
-// .la_note h2
-// {
-//     font-family: "DeliusUnicase-Bold";
-//     color: #3c1218;
-
-// }
 
 .zoom{
     // text-decoration: none;

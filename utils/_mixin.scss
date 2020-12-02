@@ -109,14 +109,14 @@
     
 }
 
-@mixin carte($backgroundColor, $textFont1, $textFont2, $textColor ) {
+@mixin carte($backgroundColor, $textColor, $textFont1, $textFont2 ) {
     background-color: $backgroundColor;
     color: $textColor;
     
     p{
         font-family: $textFont1;
     }
-    h1{
+    h2{
         font-family: $textFont2;
     }
 }

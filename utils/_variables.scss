@@ -46,7 +46,7 @@ $menus: (
         textColor: $couleur_4,
         textFont1: $font_la_note,
         textFont2: $font_la_note2,
-        backgroundColor: #fcdfdb,
+        backgroundColor:$couleur_back_la_note,
         resto: 'La-note'
     ),
     2: (
@@ -57,7 +57,7 @@ $menus: (
         // ecriture_2: $font_le_chic_2,
         textFont1: $font_le_chic,
         textFont2: $font_le_chic_2,
-        backgroundColor: $couleur_11,
+        backgroundColor: $couleur_back_le_chic,
         resto: 'le-chic'
     ),
     3: (
@@ -68,7 +68,7 @@ $menus: (
         // ecriture_2: $font_le_delice_2,
         textFont1: $font_le_delice,
         textFont2: $font_le_delice_2,
-        backgroundColor: $couleur_3,
+        backgroundColor: $couleur_back_le_delice,
         resto: 'le-delice'
     ),
     4: (
@@ -79,7 +79,7 @@ $menus: (
         // ecriture_2: $font_la_palette_2,
         textFont1: $font_la_palette,
         textFont2: $font_la_palette_2,
-        backgroundColor: $couleur_3,
+        backgroundColor: $couleur_back_la_palette,
         resto: 'la-palette'
     )
 );

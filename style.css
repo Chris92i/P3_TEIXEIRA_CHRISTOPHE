@@ -136,31 +136,31 @@ footer {
 
 @font-face {
   font-family: "Devonshire-Regular";
-  src: url("../Font/Devonshire/Devonshire-Regular.ttf") format("ttf");
+  src: url("./Font/Devonshire/Devonshire-Regular.ttf");
 }
 @font-face {
   font-family: "DeliusUnicase-Bold";
-  src: url("../Font/Delius_Unicase/DeliusUnicase-Bold.ttf") format("ttf");
+  src: url("./Font/Delius_Unicase/DeliusUnicase-Bold.ttf");
 }
 @font-face {
   font-family: "AbrilFatface";
-  src: url("../Font/Abril_Fatface/AbrilFatface-Regular.ttf") format("ttf");
+  src: url("./Font/Abril_Fatface/AbrilFatface-Regular.ttf");
 }
 @font-face {
   font-family: "Montez-Regular";
-  src: url("../Font/Montez/Montez-Regular.ttf") format("ttf");
+  src: url("./Font/Montez/Montez-Regular.ttf");
 }
 @font-face {
   font-family: "Dancing Script";
-  src: url("../Font/Dancing_Script/DancingScript-VariableFont_wght.ttf") format("ttf");
+  src: url("./Font/Dancing_Script/DancingScript-VariableFont_wght.ttf");
 }
 @font-face {
   font-family: "ShadowsIntoLight";
-  src: url("../Font/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf") format("ttf");
+  src: url("./Font/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf");
 }
 @font-face {
   font-family: "KaushanScript-Regular";
-  src: url("../Font/Kaushan_Script/KaushanScript-Regular.ttf") format("ttf");
+  src: url("./Font/Kaushan_Script/KaushanScript-Regular.ttf");
 }
 /* ------------------------ page d'accueil --------------------- */
 html, body {
@@ -192,19 +192,6 @@ body {
   flex-wrap: wrap;
   background-color: white;
   margin-top: 50px;
-}
-#main_p1 {
-  margin-top: 10px;
-  max-width: 70%;
-  height: 100%;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-left: 20%;
-  padding-right: 20%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: white;
 }
 
 .cartes {
@@ -268,13 +255,13 @@ body {
   align-items: center;
   box-shadow: 1px 1px 10px #EEEEEE;
   background-color: #fcdfdb;
-  color: "DeliusUnicase-Bold";
+  color: #3c1218;
 }
 .carte-La-note p {
-  font-family: #3c1218;
-}
-.carte-La-note h1 {
   font-family: "Devonshire-Regular";
+}
+.carte-La-note h2 {
+  font-family: "DeliusUnicase-Bold";
 }
 
 .zoom1 {
@@ -308,13 +295,13 @@ body {
   align-items: center;
   box-shadow: 1px 1px 10px #EEEEEE;
   background-color: #FEF4FD;
-  color: "Montez-Regular";
+  color: #c77412;
 }
 .carte-le-chic p {
-  font-family: #c77412;
-}
-.carte-le-chic h1 {
   font-family: "AbrilFatface";
+}
+.carte-le-chic h2 {
+  font-family: "Montez-Regular";
 }
 
 .zoom2 {
@@ -347,18 +334,18 @@ body {
   text-align: center;
   align-items: center;
   box-shadow: 1px 1px 10px #EEEEEE;
-  background-color: #fcdfdb;
-  color: "ShadowsIntoLight";
+  background-color: #F9F9F9;
+  color: #0431df;
 }
 .carte-le-delice p {
-  font-family: #0431df;
-}
-.carte-le-delice h1 {
   font-family: "Dancing Script";
+}
+.carte-le-delice h2 {
+  font-family: "ShadowsIntoLight";
 }
 
 .zoom3 {
-  background-color: #fcdfdb;
+  background-color: #F9F9F9;
   color: #0431df;
   transform: scale(1);
   transition-duration: 0.7s;
@@ -387,18 +374,18 @@ body {
   text-align: center;
   align-items: center;
   box-shadow: 1px 1px 10px #EEEEEE;
-  background-color: #fcdfdb;
-  color: "ShadowsIntoLight";
+  background-color: #FCFFFD;
+  color: #42973c;
 }
 .carte-la-palette p {
-  font-family: #42973c;
-}
-.carte-la-palette h1 {
   font-family: "KaushanScript-Regular";
+}
+.carte-la-palette h2 {
+  font-family: "ShadowsIntoLight";
 }
 
 .zoom4 {
-  background-color: #fcdfdb;
+  background-color: #FCFFFD;
   color: #42973c;
   transform: scale(1);
   transition-duration: 0.7s;
