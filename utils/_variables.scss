@@ -33,11 +33,6 @@ $font_la_palette: "KaushanScript-Regular";
 $font_la_palette_2: "ShadowsIntoLight";
 
 
-// $note: (
-//     first_color: $couleur_5,
-//     second_color: $couleur_6
-// );
-
 
 $menus: (
     1: (
@@ -53,8 +48,6 @@ $menus: (
         from: $couleur_5,
         to: $couleur_6,
         textColor: $couleur_5,
-        // ecriture_1: $font_le_chic,
-        // ecriture_2: $font_le_chic_2,
         textFont1: $font_le_chic,
         textFont2: $font_le_chic_2,
         backgroundColor: $couleur_back_le_chic,
@@ -64,8 +57,6 @@ $menus: (
         from: $couleur_7,
         to: $couleur_8,
         textColor: $couleur_7,
-        // ecriture_1: $font_le_delice,
-        // ecriture_2: $font_le_delice_2,
         textFont1: $font_le_delice,
         textFont2: $font_le_delice_2,
         backgroundColor: $couleur_back_le_delice,
@@ -75,19 +66,12 @@ $menus: (
         from: $couleur_9,
         to: $couleur_10,
         textColor: $couleur_9,
-        // ecriture_1: $font_la_palette,
-        // ecriture_2: $font_la_palette_2,
         textFont1: $font_la_palette,
         textFont2: $font_la_palette_2,
         backgroundColor: $couleur_back_la_palette,
         resto: 'la-palette'
     )
 );
-
-
-
-
-
 
 
 

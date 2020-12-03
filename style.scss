@@ -107,32 +107,6 @@ body
 }
 
 
-// .la_note, .le_chic, .le_delice, .la_palette
-// {
-//     height: 100%;
-//     width: 70%;
-//     display: flex;
-//     flex-direction: column;
-//     margin: 15px 20px 15px 20px;
-//     justify-items: center;
-//     text-align: center;
-//     // padding-top: 120px;
-//     align-items: center;
-//     box-shadow: 1px 1px 10px #EEEEEE;
-    
-// }
-
-
-
-.testIcone
-{
-    max-width: calc((200px / 8));
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
 .fa-music{
     background: linear-gradient(to right, #f04b5e , #f78f6a);
     -webkit-background-clip: text;
@@ -175,40 +149,29 @@ body
             map-get($menu, 'backgroundColor')
         );
     }
+
+    .main_menu_#{map-get($menu, 'resto')}{
+        @include main_menus(
+            map-get($menu, 'backgroundColor')
+        )
+    }
+
+    .titrePage#{map-get($menu, 'resto')}{
+    @include titre_menu(
+        map-get($menu, 'from'),
+        map-get($menu, 'to'),
+        map-get($menu, 'textColor'),
+        map-get($menu, 'textFont1')
+    )
+    }
+
+
+
+
+
 }
 
 
-
-.le_chic
-{
-    background-color: $couleur_back_le_chic;
-    font-family: "Montez-Regular";
-    // .back_chic{
-    //     background: linear-gradient(to left,brown, blue);
-    // }
-}
-
-// .le_chic h2
-// {
-//     font-family: "AbrilFatface";
-// }
-
-// .le_delice
-// {
-//     background-color: #F9F9F9;
-//     font-family: "Dancing Script";
-// }
-
-// .le_delice h2, .la_palette h2
-// {
-//     font-family: "ShadowsIntoLight";
-// }
-
-// .la_palette
-// {
-//     background-color: #FCFFFD;
-//     font-family: "KaushanScript-Regular";
-// }
 
 a
 {
@@ -220,6 +183,7 @@ h2
 {
     margin-top: 10px;
 }
+
 
 .bouton
 {
@@ -239,53 +203,11 @@ h2
 
 }
 
+
 .prochainement
 {
     align-content: center;
 }
-
-// .container
-// {
-//     margin-left: 0px;
-//     padding-left: 0px;
-//     display: flex;
-//     align-items: baseline
-// }
-
-
-footer a
-{
-    justify-content: flex-start;
-    text-decoration: none;
-    color: $couleur_2;
-    width: 50%;
-    padding-top: 20px;
-    font-size: 20px;
-    padding-left: 10px;
-    display: flex;
-}
-
-
-.text_footer{
-    float: left;
-    &:nth-child(2){
-        display: flex;
-        align-content: flex-end;
-        float: right;
-    }
-    &:hover{
-    animation: toggle .1s ease-in-out 5;
-    }
-}
-
-footer a:nth-child(2)
-
-{
-    justify-content: flex-end;
-    text-align: right;
-    padding-right: 10px;
-}
-
 
 
 .loader{
@@ -314,57 +236,57 @@ footer a:nth-child(2)
     }
 }
 
+footer a
+{
+    justify-content: flex-start;
+    text-decoration: none;
+    color: $couleur_2;
+    width: 50%;
+    padding-top: 20px;
+    font-size: 20px;
+    padding-left: 10px;
+    display: flex;
+}
 
 
+.text_footer{
+    float: left;
+    &:nth-child(2){
+        display: flex;
+        align-content: flex-end;
+        float: right;
+    }
+    &:hover{
+    animation: toggle .1s ease-in-out 5;
+    }
+}
+
+
+footer a:nth-child(2)
+
+{
+    justify-content: flex-end;
+    text-align: right;
+    padding-right: 10px;
+}
 
 
 
 /* ---------------- menu P1 la note enchantee -------------------- */
 
-.titrePage
-{
-    display: flex;
-    height: 10%;
-    width: 100%;
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: $couleur_4;
-    font-size: 3vh;
-    justify-content: center;
-}
+// .titrePage
+// {
+// @include titre_menu
+// }
 
 
 
-#main_menu
-{
-    margin-left: 20px;
-    margin-right: 20px;
-    max-width: 40%;
-    margin-bottom: 2%;
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    justify-content: center;
-    background-color: $couleur_back_la_note;
-    font-family: "DeliusUnicase-Bold";
-    color: #3c1218;
-    font-size: 0.9em;    
-    
-}
+// #main_menu
+// {   
+//  @include main_menus   
+// }
 
-.carte
-{
-    display: flex;
-    flex-direction: column;
-    height: calc(100% - 15%);
-    padding: 30px;   
-    // // :nth-child(5){
-    // //     align-items: stretch;
-    // }
-}
+
 
 @each $menu in $menus {
     $i: index($menus, $menu);

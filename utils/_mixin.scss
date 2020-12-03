@@ -113,6 +113,7 @@
 @mixin carte($backgroundColor, $textColor, $textFont1, $textFont2 ) {
     background-color: $backgroundColor;
     color: $textColor;
+    height: 100%;
     
     p{
         font-family: $textFont1;
@@ -121,6 +122,42 @@
         font-family: $textFont2;
     }
 }
+
+@mixin main_menus($backgroundColor) {
+    background-color: $backgroundColor;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 40%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    // font-family: "DeliusUnicase-Bold";
+    // color: #3c1218;
+    font-size: 0.9em; 
+}
+
+
+@mixin titre_menu($from, $to, $textColor, $textFont1) {
+    display: flex;
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    font-weight: bold;
+    color: $couleur_4;
+    font-size: 3vh;
+    justify-content: center;
+    p {
+        background: linear-gradient(to right, $from , $to);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: $textFont1;
+    }
+}
+
 
 
 
