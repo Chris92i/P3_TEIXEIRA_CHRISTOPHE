@@ -165,7 +165,15 @@ body
     )
     }
 
-
+    .headerMenu_#{map-get($menu, 'resto')}{
+    @include header_menus(
+        map-get($menu, 'backgroundColor'),
+        map-get($menu, 'from'),
+        map-get($menu, 'to'),
+        map-get($menu, 'textColor'),
+        map-get($menu, 'textFont1')
+    )           
+    }
 
 
 
@@ -290,18 +298,18 @@ footer a:nth-child(2)
     }
 }
 
-.headerMenu{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: $couleur_3;
-    font-size: inherit;
-    font-family: $font_la_note;
-    color: $couleur_4;
-    width: 100%;
-    height: 10%;
-    text-align: center;  
+// .headerMenu{
+//     display: flex;
+//     flex-wrap: wrap;
+//     background-color: $couleur_3;
+//     font-size: inherit;
+//     font-family: $font_la_note;
+//     color: $couleur_4;
+//     width: 100%;
+//     height: 10%;
+//     text-align: center;  
     
-}
+// }
 
 
 .entree, .plats, .dessert
