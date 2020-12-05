@@ -125,7 +125,7 @@
 }
 
 @mixin main_menus($backgroundColor) {
-    background-color: $backgroundColor;
+    // background-color: $backgroundColor;
     margin-left: 20px;
     margin-right: 20px;
     max-width: 40%;
@@ -163,7 +163,8 @@
 @mixin header_menus($backgroundColor, $from, $to, $textColor, $textFont1) {
     display: flex;
     flex-wrap: wrap;
-    background-color: $backgroundColor;
+    // background-color: $backgroundColor;
+    background-color: inherit;
     font-size: inherit;
     font-family: $font_la_note;
     color: $couleur_4;

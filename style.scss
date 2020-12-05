@@ -102,10 +102,6 @@ body
 }
 
 
-@each $menu in $menus {
-    
-}
-
 
 .fa-music{
     background: linear-gradient(to right, #f04b5e , #f78f6a);
@@ -297,6 +293,15 @@ footer a:nth-child(2)
     }
 }
 
+
+.carte-Liste{
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    background-color: $couleur_back_la_note;
+}
+
+
 // .headerMenu{
 //     display: flex;
 //     flex-wrap: wrap;
@@ -376,14 +381,25 @@ footer a:nth-child(2)
    }
 }
 
+.note_1{
+    width: 100%;
+    font-size: 25px;
+}
+
 
 .basMenu
 {
     width: 100%;
     height: 10%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    
+    p{
+        margin-left: 5px;
+    }
+    .note_2{
+        font-size: 15px;                                
+    }
 }
 
 // .ligne

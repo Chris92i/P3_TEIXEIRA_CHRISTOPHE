@@ -266,7 +266,6 @@ body {
 }
 
 .main_menu_La-note {
-  background-color: #fcdfdb;
   margin-left: 20px;
   margin-right: 20px;
   max-width: 40%;
@@ -300,7 +299,7 @@ body {
 .headerMenu_La-note {
   display: flex;
   flex-wrap: wrap;
-  background-color: #fcdfdb;
+  background-color: inherit;
   font-size: inherit;
   font-family: "Devonshire-Regular";
   color: #3c1218;
@@ -357,7 +356,6 @@ body {
 }
 
 .main_menu_le-chic {
-  background-color: #FEF4FD;
   margin-left: 20px;
   margin-right: 20px;
   max-width: 40%;
@@ -391,7 +389,7 @@ body {
 .headerMenu_le-chic {
   display: flex;
   flex-wrap: wrap;
-  background-color: #FEF4FD;
+  background-color: inherit;
   font-size: inherit;
   font-family: "Devonshire-Regular";
   color: #3c1218;
@@ -448,7 +446,6 @@ body {
 }
 
 .main_menu_le-delice {
-  background-color: #F9F9F9;
   margin-left: 20px;
   margin-right: 20px;
   max-width: 40%;
@@ -482,7 +479,7 @@ body {
 .headerMenu_le-delice {
   display: flex;
   flex-wrap: wrap;
-  background-color: #F9F9F9;
+  background-color: inherit;
   font-size: inherit;
   font-family: "Devonshire-Regular";
   color: #3c1218;
@@ -539,7 +536,6 @@ body {
 }
 
 .main_menu_la-palette {
-  background-color: #FCFFFD;
   margin-left: 20px;
   margin-right: 20px;
   max-width: 40%;
@@ -573,7 +569,7 @@ body {
 .headerMenu_la-palette {
   display: flex;
   flex-wrap: wrap;
-  background-color: #FCFFFD;
+  background-color: inherit;
   font-size: inherit;
   font-family: "Devonshire-Regular";
   color: #3c1218;
@@ -685,6 +681,13 @@ footer a:nth-child(2) {
 }
 
 /* ---------------- menu P1 la note enchantee -------------------- */
+.carte-Liste {
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  background-color: #fcdfdb;
+}
+
 .entree, .plats, .dessert {
   height: 25%;
   width: 100%;
@@ -745,11 +748,23 @@ footer a:nth-child(2) {
   background-size: 100% 100%;
 }
 
+.note_1 {
+  width: 100%;
+  font-size: 25px;
+}
+
 .basMenu {
   width: 100%;
   height: 10%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+}
+.basMenu p {
+  margin-left: 5px;
+}
+.basMenu .note_2 {
+  font-size: 15px;
 }
 
 .intitule {
