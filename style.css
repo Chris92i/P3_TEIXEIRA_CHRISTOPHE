@@ -195,7 +195,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   background-color: white;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .cartes {
@@ -206,13 +206,14 @@ body {
   flex-wrap: wrap;
 }
 .cartes a {
-  width: 40%;
-  height: calc((100% / 3) + 10%);
+  width: 35%;
+  max-height: 22vw;
   display: flex;
   flex-direction: row;
   align-content: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
   justify-content: space-around;
 }
 
@@ -246,7 +247,6 @@ body {
 
 .zoom1 {
   margin: auto;
-  background-color: #fcdfdb;
   color: #3c1218;
   transform: scale(1);
   transition-duration: 0.7s;
@@ -280,7 +280,7 @@ body {
   font-size: 0.9em;
 }
 
-.titrePageLa-note {
+.titrePage_La-note {
   display: flex;
   height: 10%;
   width: 100%;
@@ -290,7 +290,7 @@ body {
   font-size: 3vh;
   justify-content: center;
 }
-.titrePageLa-note p {
+.titrePage_La-note p {
   background: linear-gradient(to right, #3c1218, #3c1218);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -338,7 +338,6 @@ body {
 
 .zoom2 {
   margin: auto;
-  background-color: #FEF4FD;
   color: #c77412;
   transform: scale(1);
   transition-duration: 0.7s;
@@ -372,7 +371,7 @@ body {
   font-size: 0.9em;
 }
 
-.titrePagele-chic {
+.titrePage_le-chic {
   display: flex;
   height: 10%;
   width: 100%;
@@ -382,7 +381,7 @@ body {
   font-size: 3vh;
   justify-content: center;
 }
-.titrePagele-chic p {
+.titrePage_le-chic p {
   background: linear-gradient(to right, #c77412, #905bfd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -430,7 +429,6 @@ body {
 
 .zoom3 {
   margin: auto;
-  background-color: #F9F9F9;
   color: #0431df;
   transform: scale(1);
   transition-duration: 0.7s;
@@ -464,7 +462,7 @@ body {
   font-size: 0.9em;
 }
 
-.titrePagele-delice {
+.titrePage_le-delice {
   display: flex;
   height: 10%;
   width: 100%;
@@ -474,7 +472,7 @@ body {
   font-size: 3vh;
   justify-content: center;
 }
-.titrePagele-delice p {
+.titrePage_le-delice p {
   background: linear-gradient(to right, #0431df, #83c0fa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -522,7 +520,6 @@ body {
 
 .zoom4 {
   margin: auto;
-  background-color: #FCFFFD;
   color: #42973c;
   transform: scale(1);
   transition-duration: 0.7s;
@@ -556,7 +553,7 @@ body {
   font-size: 0.9em;
 }
 
-.titrePagela-palette {
+.titrePage_la-palette {
   display: flex;
   height: 10%;
   width: 100%;
@@ -566,7 +563,7 @@ body {
   font-size: 3vh;
   justify-content: center;
 }
-.titrePagela-palette p {
+.titrePage_la-palette p {
   background: linear-gradient(to right, #42973c, #bfff7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -702,14 +699,6 @@ footer a:nth-child(2) {
   margin: 10px;
   font-weight: bold;
 }
-.entree .intitule .under, .plats .intitule .under, .dessert .intitule .under {
-  background: linear-gradient(to top, red 0%, red 1px, transparent 3px) no-repeat;
-  background-size: 0% 100%;
-  transition: background-size 0.3s;
-}
-.entree .intitule .under:hover, .plats .intitule .under:hover, .dessert .intitule .under:hover {
-  background-size: 100% 100%;
-}
 .entree .article_P1, .plats .article_P1, .dessert .article_P1 {
   margin: 5px;
   width: 80%;
@@ -718,6 +707,42 @@ footer a:nth-child(2) {
 }
 .entree .prix, .plats .prix, .dessert .prix {
   margin: 5px;
+}
+
+.under-La-note {
+  background: linear-gradient(to top, #3c1218 0%, #3c1218 1px, transparent 3px) no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.3s;
+}
+.under-La-note:hover {
+  background-size: 100% 100%;
+}
+
+.under-le-chic {
+  background: linear-gradient(to top, #c77412 0%, #c77412 1px, transparent 3px) no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.3s;
+}
+.under-le-chic:hover {
+  background-size: 100% 100%;
+}
+
+.under-le-delice {
+  background: linear-gradient(to top, #0431df 0%, #0431df 1px, transparent 3px) no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.3s;
+}
+.under-le-delice:hover {
+  background-size: 100% 100%;
+}
+
+.under-la-palette {
+  background: linear-gradient(to top, #42973c 0%, #42973c 1px, transparent 3px) no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.3s;
+}
+.under-la-palette:hover {
+  background-size: 100% 100%;
 }
 
 .basMenu {

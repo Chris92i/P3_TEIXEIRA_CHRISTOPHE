@@ -14,13 +14,14 @@
 }
 
 @mixin case {
-    width: 40%;
-    height: calc((100% / 3) + 10%);
+    width: 35%;
+    max-height: 22vw;
     display: flex;
     flex-direction: row;
     align-content: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
     justify-content: space-around;
 }
 
@@ -90,7 +91,6 @@
     h2{
         font-family: $textFont2;
     }
-    background-color: $backgroundColor;
     color: $textColor;
     transform: scale(1);
     transition-duration: 0.7s;
@@ -101,13 +101,14 @@
 }
 
 
-@mixin surligne () {
-    :hover{
-        // text-decoration: underline;
-        background-size: 100% 100%;
-    }
+@mixin surligne($from) {
 
-    
+    background: linear-gradient(to top, $from 0%,$from 1px, transparent 3px) no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.3s;
+    &:hover{
+    background-size: 100% 100%;
+    }
 }
 
 @mixin carte($backgroundColor, $textColor, $textFont1, $textFont2 ) {

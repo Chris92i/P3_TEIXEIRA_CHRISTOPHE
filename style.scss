@@ -86,7 +86,7 @@ body
 {
     &_home{
         @include main_base();
-        margin-top: 50px;
+        margin-top: 20px;
     }
 }
 
@@ -116,8 +116,7 @@ body
 
 
 
-@each $menu in $menus {
-    $i: index($menus, $menu);
+@each $i, $menu in $menus {
     $menu: map-get($menus, $i);
 
     .carte-#{map-get($menu, 'resto')}{
@@ -156,23 +155,23 @@ body
         )
     }
 
-    .titrePage#{map-get($menu, 'resto')}{
-    @include titre_menu(
-        map-get($menu, 'from'),
-        map-get($menu, 'to'),
-        map-get($menu, 'textColor'),
-        map-get($menu, 'textFont1')
-    )
+    .titrePage_#{map-get($menu, 'resto')}{
+        @include titre_menu(
+            map-get($menu, 'from'),
+            map-get($menu, 'to'),
+            map-get($menu, 'textColor'),
+            map-get($menu, 'textFont1')
+        )
     }
 
     .headerMenu_#{map-get($menu, 'resto')}{
-    @include header_menus(
-        map-get($menu, 'backgroundColor'),
-        map-get($menu, 'from'),
-        map-get($menu, 'to'),
-        map-get($menu, 'textColor'),
-        map-get($menu, 'textFont1')
-    )           
+        @include header_menus(
+            map-get($menu, 'backgroundColor'),
+            map-get($menu, 'from'),
+            map-get($menu, 'to'),
+            map-get($menu, 'textColor'),
+            map-get($menu, 'textFont1')
+        )           
     }
 
 
@@ -334,16 +333,25 @@ footer a:nth-child(2)
     //         background-size: 100% 100%;  
     //     }
     // }
-    .under
-    {
-        background: linear-gradient(to top, red 0%, red 1px, transparent 3px) no-repeat;
-        background-size: 0% 100%;
-        transition: background-size 0.3s;
-        // @include surligne;
-        &:hover{
-            background-size: 100% 100%; 
-        }
-    }
+    // .under
+    // {
+    //     // background: linear-gradient(to top, red 0%, red 1px, transparent 3px) no-repeat;
+    //     // background-size: 0% 100%;
+    //     // transition: background-size 0.3s;
+    //     // // @include surligne;
+    //     // &:hover{
+    //     //     // background-size: 100% 100%; 
+    //     //     @include surligne;
+    //     @each $menu in $menus{
+    //        $i: index($menus, $menu );
+    //        $menu: map-get($menus, $i ); 
+    //        .under{
+    //            @include surligne(
+    //                map-get($menu, 'from')
+    //            )
+    //        }
+    //     }
+    // }
 
     }
     .article_P1{
@@ -357,6 +365,17 @@ footer a:nth-child(2)
         // font-weight: bold;
     }
 }
+
+@each $key, $value in $menus{
+    $value: map-get($menus, $key);
+
+    .under-#{map-get($value, 'resto')}{
+       @include surligne(
+           map-get($value, 'from')
+       )
+   }
+}
+
 
 .basMenu
 {
