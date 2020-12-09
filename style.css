@@ -270,6 +270,7 @@ body {
   margin-right: 20px;
   max-width: 40%;
   margin-bottom: 2%;
+  overflow: scroll;
   display: flex;
   flex-direction: row;
   flex-grow: 1;
@@ -300,11 +301,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   background-color: inherit;
-  font-size: inherit;
+  font-size: 2em;
   font-family: "Devonshire-Regular";
   color: #3c1218;
   width: 100%;
-  height: 10%;
   text-align: center;
 }
 .headerMenu_La-note h1 {
@@ -360,6 +360,7 @@ body {
   margin-right: 20px;
   max-width: 40%;
   margin-bottom: 2%;
+  overflow: scroll;
   display: flex;
   flex-direction: row;
   flex-grow: 1;
@@ -390,11 +391,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   background-color: inherit;
-  font-size: inherit;
+  font-size: 2em;
   font-family: "Devonshire-Regular";
   color: #3c1218;
   width: 100%;
-  height: 10%;
   text-align: center;
 }
 .headerMenu_le-chic h1 {
@@ -450,6 +450,7 @@ body {
   margin-right: 20px;
   max-width: 40%;
   margin-bottom: 2%;
+  overflow: scroll;
   display: flex;
   flex-direction: row;
   flex-grow: 1;
@@ -480,11 +481,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   background-color: inherit;
-  font-size: inherit;
+  font-size: 2em;
   font-family: "Devonshire-Regular";
   color: #3c1218;
   width: 100%;
-  height: 10%;
   text-align: center;
 }
 .headerMenu_le-delice h1 {
@@ -540,6 +540,7 @@ body {
   margin-right: 20px;
   max-width: 40%;
   margin-bottom: 2%;
+  overflow: scroll;
   display: flex;
   flex-direction: row;
   flex-grow: 1;
@@ -570,11 +571,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   background-color: inherit;
-  font-size: inherit;
+  font-size: 2em;
   font-family: "Devonshire-Regular";
   color: #3c1218;
   width: 100%;
-  height: 10%;
   text-align: center;
 }
 .headerMenu_la-palette h1 {
@@ -682,10 +682,8 @@ footer a:nth-child(2) {
 
 /* ---------------- menu P1 la note enchantee -------------------- */
 .carte-Liste {
-  height: 55vh;
   width: 100%;
   padding: 40px;
-  background-color: #fcdfdb;
 }
 
 .back-La-note {
@@ -788,20 +786,8 @@ footer a:nth-child(2) {
 }
 
 /* ---------------- menu P2 le chic -------------------- */
-.body_P1 {
-  background-color: #FEF4FD;
-}
-
 /* ---------------- menu P3 le delice -------------------- */
-.body_P1 {
-  background-color: #F9F9F9;
-}
-
 /* ---------------- menu P4 la palette  -------------------- */
-.body_P1 {
-  background-color: #FCFFFD;
-}
-
 .progress__bar {
   transform: scaleX(0);
   border: solid green;

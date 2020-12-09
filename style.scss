@@ -167,9 +167,6 @@ body
             map-get($menu, 'textFont1')
         )           
     }
-
-
-
 }
 
 
@@ -276,27 +273,10 @@ footer a:nth-child(2)
 /* ---------------- menu P1 la note enchantee -------------------- */
 
 
-
-// @each $menu in $menus {
-//     $i: index($menus, $menu);
-//     $menu: map-get($menus, $i);
-//     .carte-#{$i}{
-//         // @include carte(
-//         //     map-get($menu, 'backgroundColor'),
-//         //     map-get($menu, 'textFont1'),
-//         //     map-get($menu, 'textFont2'),
-//         //     map-get($menu, 'textColor'),
-//         // )
-        
-//     }
-// }
-
-
 .carte-Liste{
-    height: 55vh;
+    // height: 55vh;
     width: 100%;
     padding: 40px;
-    background-color: $couleur_back_la_note;
 }
 
 @each $key, $value in $menus{
@@ -304,22 +284,6 @@ footer a:nth-child(2)
         background-color: map-get($map: $value , $key: 'backgroundColor');
     }
 }
-
-
-
-
-// .headerMenu{
-//     display: flex;
-//     flex-wrap: wrap;
-//     background-color: $couleur_3;
-//     font-size: inherit;
-//     font-family: $font_la_note;
-//     color: $couleur_4;
-//     width: 100%;
-//     height: 10%;
-//     text-align: center;  
-    
-// }
 
 
 .entree, .plats, .dessert
@@ -335,35 +299,6 @@ footer a:nth-child(2)
         width: 100%;
         margin: 10px;
         font-weight: bold;
-    // h1{
-    //     background: linear-gradient(to top, red 0%, red 1px, transparent 3px) no-repeat;
-    //     background-size: 0% 100%;
-    //     transition: background-size 0.3s;
-    //     // @include surligne;
-    //     &:hover{
-    //         background-size: 100% 100%;  
-    //     }
-    // }
-    // .under
-    // {
-    //     // background: linear-gradient(to top, red 0%, red 1px, transparent 3px) no-repeat;
-    //     // background-size: 0% 100%;
-    //     // transition: background-size 0.3s;
-    //     // // @include surligne;
-    //     // &:hover{
-    //     //     // background-size: 100% 100%; 
-    //     //     @include surligne;
-    //     @each $menu in $menus{
-    //        $i: index($menus, $menu );
-    //        $menu: map-get($menus, $i ); 
-    //        .under{
-    //            @include surligne(
-    //                map-get($menu, 'from')
-    //            )
-    //        }
-    //     }
-    // }
-
     }
     .article_P1{
         margin: 5px;
@@ -408,65 +343,21 @@ footer a:nth-child(2)
     }
 }
 
-// .ligne
-// {
-//     width: 100%;
-//     display: flex;
-//     flex-direction: row;
-//     margin-top: 10px;
-//     margin-bottom: auto;
-//     p 
-//     {
-//         // width: 70%;
-//         display: flex;
-//         justify-content: flex-start;
-//     }
-//     aside
-//     {
-//     //    width: 20%;
-//     }
-// }
-// .ligne :nth-child(2)
-// {
-//     display: inline-flex;
-//     justify-content: flex-end;
-
-// }
 
 .intitule{
     text-align: center;
-    // h1{
-    //     color: inherit;
-    //     text-decoration: none;
-    //     background: linear-gradient(to top, #3c1218, 0%, #3c1218 2px, transparent 5px);
-    //     background-size: 0 100%;
-    //     transition: background-size .3s;
-    //     &:hover{
-    //         background-size: 100% 100%;
-    //     }
-    // }
 }
 
 /* ---------------- menu P2 le chic -------------------- */
 
-.body_P1
-{
-    background-color: #FEF4FD;
-}
+
 
 /* ---------------- menu P3 le delice -------------------- */
 
-.body_P1
-{
-    background-color: #F9F9F9;
-}
+
 
 /* ---------------- menu P4 la palette  -------------------- */
 
-.body_P1
-{
-    background-color: #FCFFFD;
-}
 
 
 .progress
