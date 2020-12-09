@@ -113,7 +113,6 @@ body
 
 
 @each $i, $menu in $menus {
-    $menu: map-get($menus, $i);
 
     .carte-#{map-get($menu, 'resto')}{
         height: 100%;
@@ -123,7 +122,6 @@ body
         margin: 15px 20px 15px 20px;
         justify-items: center;
         text-align: center;
-        // padding-top: 120px;
         align-items: center;
         box-shadow: 1px 1px 10px #EEEEEE;
         @include carte(
@@ -279,27 +277,35 @@ footer a:nth-child(2)
 
 
 
-@each $menu in $menus {
-    $i: index($menus, $menu);
-    $menu: map-get($menus, $i);
-    .carte-#{$i}{
-        // @include carte(
-        //     map-get($menu, 'backgroundColor'),
-        //     map-get($menu, 'textFont1'),
-        //     map-get($menu, 'textFont2'),
-        //     map-get($menu, 'textColor'),
-        // )
+// @each $menu in $menus {
+//     $i: index($menus, $menu);
+//     $menu: map-get($menus, $i);
+//     .carte-#{$i}{
+//         // @include carte(
+//         //     map-get($menu, 'backgroundColor'),
+//         //     map-get($menu, 'textFont1'),
+//         //     map-get($menu, 'textFont2'),
+//         //     map-get($menu, 'textColor'),
+//         // )
         
-    }
-}
+//     }
+// }
 
 
 .carte-Liste{
-    height: 100%;
+    height: 55vh;
     width: 100%;
     padding: 40px;
     background-color: $couleur_back_la_note;
 }
+
+@each $key, $value in $menus{
+    .back-#{map-get($value, 'resto')}{
+        background-color: map-get($map: $value , $key: 'backgroundColor');
+    }
+}
+
+
 
 
 // .headerMenu{
