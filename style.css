@@ -1,3 +1,4 @@
+/* ---------------------------------------------- @imports  ------------------------------------- */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -54,7 +55,6 @@ table {
 }
 
 /* ---------------------------------------------- au dessus reset css d'Eric Meyers------------------------------------- */
-/* ---------------------------------------------- @imports  ------------------------------------- */
 @keyframes wiggle {
   25% {
     transform: translateX(2%);
@@ -132,6 +132,35 @@ footer {
   bottom: 0px;
   left: 0px;
   right: 0px;
+}
+
+footer a {
+  justify-content: flex-start;
+  text-decoration: none;
+  color: #fdcb46;
+  width: 50%;
+  padding-top: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+  display: flex;
+}
+
+.text_footer {
+  float: left;
+}
+.text_footer:nth-child(2) {
+  display: flex;
+  align-content: flex-end;
+  float: right;
+}
+.text_footer:hover {
+  animation: toggle 0.1s ease-in-out 5;
+}
+
+footer a:nth-child(2) {
+  justify-content: flex-end;
+  text-align: right;
+  padding-right: 10px;
 }
 
 @font-face {
@@ -649,35 +678,6 @@ h2 {
 }
 .loader__point--3 {
   animation-delay: 1000ms;
-}
-
-footer a {
-  justify-content: flex-start;
-  text-decoration: none;
-  color: #fdcb46;
-  width: 50%;
-  padding-top: 20px;
-  font-size: 20px;
-  padding-left: 10px;
-  display: flex;
-}
-
-.text_footer {
-  float: left;
-}
-.text_footer:nth-child(2) {
-  display: flex;
-  align-content: flex-end;
-  float: right;
-}
-.text_footer:hover {
-  animation: toggle 0.1s ease-in-out 5;
-}
-
-footer a:nth-child(2) {
-  justify-content: flex-end;
-  text-align: right;
-  padding-right: 10px;
 }
 
 /* ---------------- menu P1 la note enchantee -------------------- */

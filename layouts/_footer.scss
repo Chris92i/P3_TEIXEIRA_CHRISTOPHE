@@ -12,3 +12,37 @@ footer
     left: 0px;
     right: 0px;
 }
+
+footer a
+{
+    justify-content: flex-start;
+    text-decoration: none;
+    color: $couleur_2;
+    width: 50%;
+    padding-top: 20px;
+    font-size: 20px;
+    padding-left: 10px;
+    display: flex;
+}
+
+
+.text_footer{
+    float: left;
+    &:nth-child(2){
+        display: flex;
+        align-content: flex-end;
+        float: right;
+    }
+    &:hover{
+    animation: toggle .1s ease-in-out 5;
+    }
+}
+
+
+footer a:nth-child(2)
+
+{
+    justify-content: flex-end;
+    text-align: right;
+    padding-right: 10px;
+}
