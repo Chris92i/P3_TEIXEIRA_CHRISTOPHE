@@ -185,3 +185,9 @@
     background-color: $backgroundColor;
 }
 
+@mixin mobile {
+    @media screen and (max-width: map-get($breakpoints, phone)) {
+        @content;
+    }    
+}
+
