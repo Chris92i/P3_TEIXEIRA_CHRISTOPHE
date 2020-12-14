@@ -8,7 +8,7 @@
 @import "./layouts/footer";
 @import "./vendors/fontawesome-free-5.14.0-web/css/all.css";
 @import "./base/Font.scss";
-@import "./responsive";
+// @import "./responsive";
 
 
 /* ------------------------ page d'accueil --------------------- */
@@ -38,10 +38,10 @@ body
     &_home{
         @include main_base();
         margin-top: 20px;
-        @include mobile{
-            max-width: 90%;
-            margin-left: 10px;
-            margin-right: 10px;
+        @include mobile-only{
+            max-width: 95%;
+            margin-left: 0px;
+            margin-right: 0px;
         }
     }
 }
@@ -53,7 +53,10 @@ body
     flex-direction: row;
     flex-wrap: wrap;
     a{
-        @include case(); 
+        @include case();
+        @include mobile-only{
+            width: 100%;
+        } 
     }
 }
 
