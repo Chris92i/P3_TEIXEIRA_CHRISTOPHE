@@ -25,22 +25,19 @@
     justify-content: space-around;
 }
 
-
-
 @mixin degrade {
-    background-image: linear-gradient(to right, brown,blue);
+    background-image: linear-gradient(to right, brown, blue);
     background-size: cover;
     background-clip: text;
     color: transparent;
 }
 
-
 @mixin btn {
-    border:none;
-	padding:6px 30px 6px 30px;
-	border-radius:8px;
-	background: $couleur_1;
-	font: 30px Arial;
+    border: none;
+    padding: 6px 30px 6px 30px;
+    border-radius: 8px;
+    background: $couleur_1;
+    font: 30px Arial;
     color: $couleur_2;
 
     margin-top: 30px;
@@ -53,23 +50,20 @@
     justify-content: center;
 }
 
-
-
-
 @mixin petit_point {
-    .loader{
-        width: $taille_point*6;
-        height: $taille_point*4;
+    .loader {
+        width: $taille_point * 6;
+        height: $taille_point * 4;
         display: flex;
         justify-content: space-evenly;
-        align-content:space-between;
-        &__point{
+        align-content: space-between;
+        &__point {
             background-color: $couleur_2;
             height: $taille_point;
             width: $taille_point;
             border-radius: 50%;
             // animation: saut $time  infinite;
-            animation: apparition $time  infinite;
+            animation: apparition $time infinite;
             @for $i from 1 through $number_point {
                 &--#{$i} {
                     animation-delay: $anim-delay * $i;
@@ -79,47 +73,44 @@
     }
 }
 
-
 @mixin zoom($from, $to, $textColor, $textFont1, $textFont2, $backgroundColor) {
     margin: auto;
     p {
-        background: linear-gradient(to right, $from , $to);
+        background: linear-gradient(to right, $from, $to);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: $textFont1;
     }
-    h2{
+    h2 {
         font-family: $textFont2;
     }
     color: $textColor;
     transform: scale(1);
     transition-duration: 0.7s;
-    &:hover{
+    &:hover {
         transform: scale(1.2);
         opacity: 0.5;
     }
 }
 
-
 @mixin surligne($from) {
-
-    background: linear-gradient(to top, $from 0%,$from 1px, transparent 3px) no-repeat;
+    background: linear-gradient(to top, $from 0%, $from 1px, transparent 3px) no-repeat;
     background-size: 0% 100%;
     transition: background-size 0.3s;
-    &:hover{
-    background-size: 100% 100%;
+    &:hover {
+        background-size: 100% 100%;
     }
 }
 
-@mixin carte($backgroundColor, $textColor, $textFont1, $textFont2 ) {
+@mixin carte($backgroundColor, $textColor, $textFont1, $textFont2) {
     background-color: $backgroundColor;
     color: $textColor;
     height: 100%;
-    
-    p{
+
+    p {
         font-family: $textFont1;
     }
-    h2{
+    h2 {
         font-family: $textFont2;
     }
 }
@@ -139,9 +130,8 @@
     justify-content: center;
     // font-family: "DeliusUnicase-Bold";
     // color: #3c1218;
-    font-size: 0.9em; 
+    font-size: 0.9em;
 }
-
 
 @mixin titre_menu($from, $to, $textColor, $textFont1) {
     display: flex;
@@ -153,13 +143,12 @@
     font-size: 3vh;
     justify-content: center;
     p {
-        background: linear-gradient(to right, $from , $to);
+        background: linear-gradient(to right, $from, $to);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: $textFont1;
     }
 }
-
 
 @mixin header_menus($backgroundColor, $from, $to, $textColor, $textFont1) {
     display: flex;
@@ -170,23 +159,21 @@
     color: $couleur_4;
     width: 100%;
     // height: 10%;
-    text-align: center;  
+    text-align: center;
     h1 {
-        background: linear-gradient(to right, $from , $to);
+        background: linear-gradient(to right, $from, $to);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: $textFont1;
     }
 }
 
-
-
 @mixin back_spe($backgroundColor) {
     background-color: $backgroundColor;
 }
 
- @mixin mobile-only {
-     @media screen and (max-width: map-get($breakpoints, phone)){
-         @content;
-     }
- }
+@mixin mobile-only {
+    @media screen and (max-width: map-get($map: $breakpoints, $key: phone)) {
+        @content;
+    }
+}

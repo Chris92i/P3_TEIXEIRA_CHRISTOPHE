@@ -196,7 +196,8 @@ footer a:nth-child(2) {
   src: url("./Font/PT_Serif/PTSerif-Regular");
 }
 /* ------------------------ page d'accueil --------------------- */
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -226,7 +227,7 @@ body {
   background-color: white;
   margin-top: 20px;
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 599px) {
   #main_home {
     max-width: 95%;
     margin-left: 0px;
@@ -252,7 +253,7 @@ body {
   margin-bottom: 10px;
   justify-content: space-around;
 }
-@media screen and (max-width: ) {
+@media screen and (max-width: 599px) {
   .cartes a {
     width: 100%;
   }
@@ -274,7 +275,7 @@ body {
   justify-items: center;
   text-align: center;
   align-items: center;
-  box-shadow: 1px 1px 10px #EEEEEE;
+  box-shadow: 1px 1px 10px #eeeeee;
   background-color: #fcdfdb;
   color: #3c1218;
   height: 100%;
@@ -364,7 +365,7 @@ body {
   justify-items: center;
   text-align: center;
   align-items: center;
-  box-shadow: 1px 1px 10px #EEEEEE;
+  box-shadow: 1px 1px 10px #eeeeee;
   background-color: #FEF4FD;
   color: #c77412;
   height: 100%;
@@ -454,7 +455,7 @@ body {
   justify-items: center;
   text-align: center;
   align-items: center;
-  box-shadow: 1px 1px 10px #EEEEEE;
+  box-shadow: 1px 1px 10px #eeeeee;
   background-color: #F9F9F9;
   color: #0431df;
   height: 100%;
@@ -544,7 +545,7 @@ body {
   justify-items: center;
   text-align: center;
   align-items: center;
-  box-shadow: 1px 1px 10px #EEEEEE;
+  box-shadow: 1px 1px 10px #eeeeee;
   background-color: #FCFFFD;
   color: #42973c;
   height: 100%;
@@ -714,7 +715,9 @@ h2 {
   background-color: #FCFFFD;
 }
 
-.entree, .plats, .dessert {
+.entree,
+.plats,
+.dessert {
   height: 25%;
   width: 100%;
   display: flex;
@@ -723,18 +726,24 @@ h2 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.entree .intitule, .plats .intitule, .dessert .intitule {
+.entree .intitule,
+.plats .intitule,
+.dessert .intitule {
   width: 100%;
   margin: 10px;
   font-weight: bold;
 }
-.entree .article_P1, .plats .article_P1, .dessert .article_P1 {
+.entree .article_P1,
+.plats .article_P1,
+.dessert .article_P1 {
   margin: 5px;
   width: 80%;
   align-items: flex-start;
   flex-grow: 2;
 }
-.entree .prix, .plats .prix, .dessert .prix {
+.entree .prix,
+.plats .prix,
+.dessert .prix {
   margin: 5px;
 }
 
