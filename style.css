@@ -119,6 +119,11 @@ header {
   font-size: 50px;
   font-weight: bold;
 }
+@media screen and (max-width: 599px) {
+  header {
+    width: 100%;
+  }
+}
 
 footer {
   height: 8%;
@@ -213,6 +218,14 @@ body {
   margin-left: 0px;
   margin-right: 0px;
 }
+@media screen and (max-width: 599px) {
+  body {
+    max-width: 100%;
+    top: 0;
+    margin: 0;
+    padding: 0;
+  }
+}
 
 #main_home {
   max-width: 70%;
@@ -232,6 +245,8 @@ body {
     max-width: 95%;
     margin-left: 0px;
     margin-right: 0px;
+    margin-top: 0%;
+    scroll-behavior: smooth;
   }
 }
 
@@ -285,6 +300,11 @@ body {
 }
 .carte-La-note h2 {
   font-family: "DeliusUnicase-Bold";
+}
+@media screen and (max-width: 599px) {
+  .carte-La-note {
+    width: 100%;
+  }
 }
 
 .zoom1 {
@@ -376,6 +396,11 @@ body {
 .carte-le-chic h2 {
   font-family: "PTSerif-Regular";
 }
+@media screen and (max-width: 599px) {
+  .carte-le-chic {
+    width: 100%;
+  }
+}
 
 .zoom2 {
   margin: auto;
@@ -466,6 +491,11 @@ body {
 .carte-le-delice h2 {
   font-family: "ShadowsIntoLight";
 }
+@media screen and (max-width: 599px) {
+  .carte-le-delice {
+    width: 100%;
+  }
+}
 
 .zoom3 {
   margin: auto;
@@ -555,6 +585,11 @@ body {
 }
 .carte-la-palette h2 {
   font-family: "ShadowsIntoLight";
+}
+@media screen and (max-width: 599px) {
+  .carte-la-palette {
+    width: 100%;
+  }
 }
 
 .zoom4 {
