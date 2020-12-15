@@ -8,31 +8,25 @@ $couleur_7: #0431df;
 $couleur_8: #83c0fa;
 $couleur_9: #42973c;
 $couleur_10: #bfff7e;
-$couleur_11: #FEF4FD;
+$couleur_11: #fef4fd;
 $couleur_12: #fcdfdb;
-
 
 $couleur_back_la_note: #fcdfdb;
 $font_la_note: "Devonshire-Regular";
 $font_la_note2: "DeliusUnicase-Bold";
 $color_la_note: #3c1218;
 
-
-$couleur_back_le_chic: #FEF4FD;
+$couleur_back_le_chic: #fef4fd;
 $font_le_chic: "AbrilFatface";
 $font_le_chic_2: "PTSerif-Regular";
 
-
-
-$couleur_back_le_delice: #F9F9F9;
+$couleur_back_le_delice: #f9f9f9;
 $font_le_delice: "Dancing Script";
 $font_le_delice_2: "ShadowsIntoLight";
 
-$couleur_back_la_palette: #FCFFFD;
+$couleur_back_la_palette: #fcfffd;
 $font_la_palette: "KaushanScript-Regular";
 $font_la_palette_2: "ShadowsIntoLight";
-
-
 
 $menus: (
     1: (
@@ -41,8 +35,8 @@ $menus: (
         textColor: $couleur_4,
         textFont1: $font_la_note,
         textFont2: $font_la_note2,
-        backgroundColor:$couleur_back_la_note,
-        resto: 'La-note'
+        backgroundColor: $couleur_back_la_note,
+        resto: "La-note",
     ),
     2: (
         from: $couleur_5,
@@ -51,7 +45,7 @@ $menus: (
         textFont1: $font_le_chic,
         textFont2: $font_le_chic_2,
         backgroundColor: $couleur_back_le_chic,
-        resto: 'le-chic'
+        resto: "le-chic",
     ),
     3: (
         from: $couleur_7,
@@ -60,7 +54,7 @@ $menus: (
         textFont1: $font_le_delice,
         textFont2: $font_le_delice_2,
         backgroundColor: $couleur_back_le_delice,
-        resto: 'le-delice'
+        resto: "le-delice",
     ),
     4: (
         from: $couleur_9,
@@ -69,18 +63,13 @@ $menus: (
         textFont1: $font_la_palette,
         textFont2: $font_la_palette_2,
         backgroundColor: $couleur_back_la_palette,
-        resto: 'la-palette'
-    )
+        resto: "la-palette",
+    ),
 );
-
 
 $breakpoints: (
-    phone: 599px
+    phone: 599px,
 );
-
-
-
-
 
 $wiggle-intensity: 2%;
 $size: 1vh;
@@ -88,5 +77,3 @@ $number_point: 3;
 $taille_point: 10px;
 $time: 1000ms;
 $anim-delay: $time / $number_point;
-
-

@@ -366,7 +366,7 @@ body {
   text-align: center;
   align-items: center;
   box-shadow: 1px 1px 10px #eeeeee;
-  background-color: #FEF4FD;
+  background-color: #fef4fd;
   color: #c77412;
   height: 100%;
 }
@@ -456,7 +456,7 @@ body {
   text-align: center;
   align-items: center;
   box-shadow: 1px 1px 10px #eeeeee;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   color: #0431df;
   height: 100%;
 }
@@ -546,7 +546,7 @@ body {
   text-align: center;
   align-items: center;
   box-shadow: 1px 1px 10px #eeeeee;
-  background-color: #FCFFFD;
+  background-color: #fcfffd;
   color: #42973c;
   height: 100%;
 }
@@ -704,15 +704,15 @@ h2 {
 }
 
 .back-le-chic {
-  background-color: #FEF4FD;
+  background-color: #fef4fd;
 }
 
 .back-le-delice {
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
 
 .back-la-palette {
-  background-color: #FCFFFD;
+  background-color: #fcfffd;
 }
 
 .entree,
