@@ -15,7 +15,7 @@
 }
 
 @mixin case {
-    width: 35%;
+    width: 37%;
     max-height: 22vw;
     display: flex;
     flex-direction: row;
@@ -46,7 +46,7 @@
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    width: 60%;
+    // width: 60%;
     height: 5%;
     justify-content: center;
 }
@@ -177,5 +177,11 @@
 @mixin mobile-only {
     @media screen and (max-width: map-get($map: $breakpoints, $key: phone)) {
         @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: map-get($map: $breakpoints, $key: tabs)){
+       @content; 
     }
 }
