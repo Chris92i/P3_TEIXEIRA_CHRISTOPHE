@@ -57,10 +57,11 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     a {
         @include case();
         @include mobile-only {
-            width: 100%;
+            width: 80%;
         }
     }
 }
@@ -107,6 +108,9 @@ body {
 
     .main_menu_#{map-get($menu, "resto")} {
         @include main_menus(map-get($menu, "backgroundColor"));
+        @include mobile-only{
+            max-width: 95%;
+        }
     }
 
     .titrePage_#{map-get($menu, "resto")} {
@@ -189,6 +193,12 @@ h2 {
 .carte-Liste {
     width: 100%;
     padding: 40px;
+    @include mobile-only{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
 }
 
 @each $key, $value in $menus {
@@ -220,7 +230,7 @@ h2 {
     }
     .prix {
         margin: 5px;
-        // font-weight: bold;
+        font-weight: bold;
     }
 }
 

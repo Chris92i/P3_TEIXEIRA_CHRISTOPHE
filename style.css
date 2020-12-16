@@ -228,7 +228,7 @@ body {
 }
 
 #main_home {
-  max-width: 70%;
+  max-width: 50%;
   height: 100%;
   margin-left: 20px;
   margin-right: 20px;
@@ -238,6 +238,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   background-color: white;
+  justify-content: center;
   margin-top: 20px;
 }
 @media screen and (max-width: 599px) {
@@ -256,6 +257,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .cartes a {
   width: 35%;
@@ -263,14 +265,12 @@ body {
   display: flex;
   flex-direction: row;
   align-content: center;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 10px;
-  justify-content: space-around;
+  justify-content: center;
 }
 @media screen and (max-width: 599px) {
   .cartes a {
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -341,10 +341,16 @@ body {
   justify-content: center;
   font-size: 0.9em;
 }
+@media screen and (max-width: 599px) {
+  .main_menu_La-note {
+    max-width: 95%;
+  }
+}
 
 .titrePage_La-note {
   display: flex;
-  height: 10%;
+  height: 8%;
+  padding-top: 4%;
   width: 100%;
   background-color: white;
   font-weight: bold;
@@ -436,10 +442,16 @@ body {
   justify-content: center;
   font-size: 0.9em;
 }
+@media screen and (max-width: 599px) {
+  .main_menu_le-chic {
+    max-width: 95%;
+  }
+}
 
 .titrePage_le-chic {
   display: flex;
-  height: 10%;
+  height: 8%;
+  padding-top: 4%;
   width: 100%;
   background-color: white;
   font-weight: bold;
@@ -531,10 +543,16 @@ body {
   justify-content: center;
   font-size: 0.9em;
 }
+@media screen and (max-width: 599px) {
+  .main_menu_le-delice {
+    max-width: 95%;
+  }
+}
 
 .titrePage_le-delice {
   display: flex;
-  height: 10%;
+  height: 8%;
+  padding-top: 4%;
   width: 100%;
   background-color: white;
   font-weight: bold;
@@ -626,10 +644,16 @@ body {
   justify-content: center;
   font-size: 0.9em;
 }
+@media screen and (max-width: 599px) {
+  .main_menu_la-palette {
+    max-width: 95%;
+  }
+}
 
 .titrePage_la-palette {
   display: flex;
-  height: 10%;
+  height: 8%;
+  padding-top: 4%;
   width: 100%;
   background-color: white;
   font-weight: bold;
@@ -733,6 +757,14 @@ h2 {
   width: 100%;
   padding: 40px;
 }
+@media screen and (max-width: 599px) {
+  .carte-Liste {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
 
 .back-La-note {
   background-color: #fcdfdb;
@@ -780,6 +812,7 @@ h2 {
 .plats .prix,
 .dessert .prix {
   margin: 5px;
+  font-weight: bold;
 }
 
 .under-La-note {
