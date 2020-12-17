@@ -232,8 +232,6 @@ body {
   height: 100%;
   margin-left: 20px;
   margin-right: 20px;
-  padding-left: 20%;
-  padding-right: 20%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -250,7 +248,7 @@ body {
     scroll-behavior: smooth;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
   #main_home {
     max-width: 100%;
     margin-left: 0px;
@@ -282,7 +280,7 @@ body {
     width: 80%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
   .cartes a {
     width: 45%;
     max-height: 42vw;
@@ -359,9 +357,11 @@ body {
 @media screen and (max-width: 599px) {
   .main_menu_La-note {
     max-width: 95%;
+    margin-left: 0%;
+    margin-right: 0%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
   .main_menu_La-note {
     max-width: 95%;
     margin-bottom: 7%;
@@ -401,6 +401,11 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Devonshire-Regular";
+}
+@media screen and (max-width: 599px) {
+  .headerMenu_La-note {
+    font-size: 1.2em;
+  }
 }
 
 .carte-le-chic {
@@ -466,9 +471,11 @@ body {
 @media screen and (max-width: 599px) {
   .main_menu_le-chic {
     max-width: 95%;
+    margin-left: 0%;
+    margin-right: 0%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
   .main_menu_le-chic {
     max-width: 95%;
     margin-bottom: 7%;
@@ -508,6 +515,11 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "AbrilFatface";
+}
+@media screen and (max-width: 599px) {
+  .headerMenu_le-chic {
+    font-size: 1.2em;
+  }
 }
 
 .carte-le-delice {
@@ -573,9 +585,11 @@ body {
 @media screen and (max-width: 599px) {
   .main_menu_le-delice {
     max-width: 95%;
+    margin-left: 0%;
+    margin-right: 0%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
   .main_menu_le-delice {
     max-width: 95%;
     margin-bottom: 7%;
@@ -615,6 +629,11 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Dancing Script";
+}
+@media screen and (max-width: 599px) {
+  .headerMenu_le-delice {
+    font-size: 1.2em;
+  }
 }
 
 .carte-la-palette {
@@ -680,9 +699,11 @@ body {
 @media screen and (max-width: 599px) {
   .main_menu_la-palette {
     max-width: 95%;
+    margin-left: 0%;
+    margin-right: 0%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
   .main_menu_la-palette {
     max-width: 95%;
     margin-bottom: 7%;
@@ -722,6 +743,11 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "KaushanScript-Regular";
+}
+@media screen and (max-width: 599px) {
+  .headerMenu_la-palette {
+    font-size: 1.2em;
+  }
 }
 
 a {
@@ -792,22 +818,27 @@ h2 {
 
 /* ---------------- menu P1 la note enchantee -------------------- */
 .carte-Liste {
-  width: 100%;
-  max-height: 50vw;
+  width: 75%;
   padding: 40px;
 }
 @media screen and (max-width: 599px) {
   .carte-Liste {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 0%;
-    padding-right: 0%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .carte-Liste a {
+    font-size: 1em;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 599px) {
+  .carte-Liste {
+    max-height: 100%;
+    width: 95%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
   .carte-Liste {
     width: 60%;
-    max-height: 80vw;
   }
 }
 
@@ -835,8 +866,9 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 10px;
+  flex-grow: 1;
 }
 .entree .intitule,
 .plats .intitule,
@@ -852,12 +884,29 @@ h2 {
   width: 80%;
   align-items: flex-start;
   flex-grow: 2;
+  font-size: 0.8em;
+}
+@media screen and (max-width: 599px) {
+  .entree .article_P1,
+.plats .article_P1,
+.dessert .article_P1 {
+    font-size: 0.7em;
+  }
 }
 .entree .prix,
 .plats .prix,
 .dessert .prix {
   margin: 5px;
+  font-size: 0.8em;
   font-weight: bold;
+}
+@media screen and (max-width: 599px) {
+  .entree .prix,
+.plats .prix,
+.dessert .prix {
+    margin: 2px;
+    font-size: 0.7em;
+  }
 }
 
 .under-La-note {
@@ -900,6 +949,11 @@ h2 {
   width: 100%;
   font-size: 25px;
 }
+@media screen and (max-width: 599px) {
+  .note_1 {
+    font-size: 15px;
+  }
+}
 
 .basMenu {
   width: 100%;
@@ -910,9 +964,16 @@ h2 {
 }
 .basMenu p {
   margin-left: 5px;
+  font-size: 1.4em;
+  font-family: "Devonshire-Regular";
 }
 .basMenu .note_2 {
-  font-size: 15px;
+  font-size: 11px;
+}
+@media screen and (max-width: 599px) {
+  .basMenu .note_2 {
+    font-size: 8px;
+  }
 }
 
 .intitule {
@@ -920,6 +981,16 @@ h2 {
 }
 
 /* ---------------- menu P2 le chic -------------------- */
+.back-le-chic .entree {
+  color: #c77412;
+}
+.back-le-chic .plats {
+  color: #a56798;
+}
+.back-le-chic .dessert {
+  color: #905bfd;
+}
+
 /* ---------------- menu P3 le delice -------------------- */
 /* ---------------- menu P4 la palette  -------------------- */
 .progress__bar {
