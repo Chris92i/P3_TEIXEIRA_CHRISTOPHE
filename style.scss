@@ -259,6 +259,7 @@ h2 {
         width: 100%;
         margin: 10px;
         font-weight: bold;
+        display: flex;
     }
     .article_P1 {
         margin: 5px;
@@ -279,6 +280,10 @@ h2 {
             font-size: 0.7em;
         }
     }
+}
+
+svg {
+    height: 15px;
 }
 
 @each $key, $value in $menus {

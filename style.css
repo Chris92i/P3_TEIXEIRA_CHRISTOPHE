@@ -876,6 +876,7 @@ h2 {
   width: 100%;
   margin: 10px;
   font-weight: bold;
+  display: flex;
 }
 .entree .article_P1,
 .plats .article_P1,
@@ -907,6 +908,10 @@ h2 {
     margin: 2px;
     font-size: 0.7em;
   }
+}
+
+svg {
+  height: 15px;
 }
 
 .under-La-note {
