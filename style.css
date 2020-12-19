@@ -874,9 +874,24 @@ h2 {
 .plats .intitule,
 .dessert .intitule {
   width: 100%;
-  margin: 10px;
+  margin: 10px 0px 10px 0px;
   font-weight: bold;
   display: flex;
+}
+.entree .intitule :nth-child(1),
+.plats .intitule :nth-child(1),
+.dessert .intitule :nth-child(1) {
+  margin-left: 0%;
+}
+.entree .intitule :nth-child(2),
+.plats .intitule :nth-child(2),
+.dessert .intitule :nth-child(2) {
+  flex-grow: 2;
+}
+.entree .intitule :nth-child(3),
+.plats .intitule :nth-child(3),
+.dessert .intitule :nth-child(3) {
+  margin-right: 0%;
 }
 .entree .article_P1,
 .plats .article_P1,
@@ -911,7 +926,7 @@ h2 {
 }
 
 svg {
-  height: 15px;
+  height: 20px;
 }
 
 .under-La-note {
@@ -983,6 +998,12 @@ svg {
 
 .intitule {
   text-align: center;
+  margin-right: 0%;
+  margin-left: 0%;
+}
+.intitule h1 {
+  flex-grow: 1;
+  width: 100%;
 }
 
 /* ---------------- menu P2 le chic -------------------- */

@@ -257,9 +257,18 @@ h2 {
     flex-grow: 1;
     .intitule {
         width: 100%;
-        margin: 10px;
+        margin: 10px 0px 10px 0px;
         font-weight: bold;
         display: flex;
+        :nth-child(1){
+            margin-left: 0%;
+        }
+        :nth-child(2){
+            flex-grow: 2;
+        }
+        :nth-child(3){
+            margin-right: 0%;
+        }
     }
     .article_P1 {
         margin: 5px;
@@ -283,7 +292,7 @@ h2 {
 }
 
 svg {
-    height: 15px;
+    height: 20px;
 }
 
 @each $key, $value in $menus {
@@ -321,6 +330,12 @@ svg {
 
 .intitule {
     text-align: center;
+    margin-right: 0%;
+    margin-left: 0%;
+    h1{
+        flex-grow: 1;
+        width: 100%;
+    }
 }
 
 /* ---------------- menu P2 le chic -------------------- */
