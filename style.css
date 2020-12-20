@@ -816,7 +816,7 @@ h2 {
   animation-delay: 1000ms;
 }
 
-/* ---------------- menu P1 la note enchantee -------------------- */
+/* ---------------- menu base -------------------- */
 .carte-Liste {
   width: 75%;
   padding: 40px;
@@ -965,6 +965,7 @@ svg {
   background-size: 100% 100%;
 }
 
+/* ---------------- menu P1 la note enchantee -------------------- */
 .note_1 {
   width: 100%;
   font-size: 25px;
@@ -1015,6 +1016,42 @@ svg {
 }
 .back-le-chic .dessert {
   color: #905bfd;
+}
+
+.entree,
+.plats,
+.dessert {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+.entree .intitule,
+.plats .intitule,
+.dessert .intitule {
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+  font-weight: bold;
+  display: flex;
+}
+.entree .intitule :nth-child(1),
+.plats .intitule :nth-child(1),
+.dessert .intitule :nth-child(1) {
+  margin-left: 0%;
+}
+.entree .intitule :nth-child(2),
+.plats .intitule :nth-child(2),
+.dessert .intitule :nth-child(2) {
+  flex-grow: 2;
+}
+.entree .intitule :nth-child(3),
+.plats .intitule :nth-child(3),
+.dessert .intitule :nth-child(3) {
+  margin-right: 0%;
 }
 
 /* ---------------- menu P3 le delice -------------------- */
