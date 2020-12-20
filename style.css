@@ -892,6 +892,7 @@ h2 {
 .plats .intitule :nth-child(3),
 .dessert .intitule :nth-child(3) {
   margin-right: 0%;
+  transform: scaleX(-1);
 }
 .entree .article_P1,
 .plats .article_P1,
@@ -1007,6 +1008,10 @@ svg {
   width: 100%;
 }
 
+.trait-1 {
+  fill: #3c1218;
+}
+
 /* ---------------- menu P2 le chic -------------------- */
 .back-le-chic .entree {
   color: #c77412;
@@ -1055,7 +1060,23 @@ svg {
 }
 
 /* ---------------- menu P3 le delice -------------------- */
+.trait-M3-T1 {
+  fill: #0431df;
+}
+
+.trait-M3-T2 {
+  fill: #096ff3;
+}
+
+.trait-M3-T3 {
+  fill: #83c0fa;
+}
+
 /* ---------------- menu P4 la palette  -------------------- */
+.trait-4 {
+  fill: red;
+}
+
 .progress__bar {
   transform: scaleX(0);
   border: solid green;
