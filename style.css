@@ -200,6 +200,10 @@ footer a:nth-child(2) {
   font-family: "PTSerif-Regular";
   src: url("./Font/PT_Serif/PTSerif-Regular");
 }
+@font-face {
+  font-family: "Caveat-VariableFont_wght";
+  src: url("./Font/Caveat/Caveat-VariableFont_wght.ttf");
+}
 /* ------------------------ page d'accueil --------------------- */
 html,
 body {
@@ -402,6 +406,9 @@ body {
   -webkit-text-fill-color: transparent;
   font-family: "Devonshire-Regular";
 }
+.headerMenu_La-note .article_P1 {
+  font-family: "Devonshire-Regular";
+}
 @media screen and (max-width: 599px) {
   .headerMenu_La-note {
     font-size: 1.2em;
@@ -505,7 +512,7 @@ body {
   flex-wrap: wrap;
   background-color: inherit;
   font-size: 2em;
-  font-family: "Devonshire-Regular";
+  font-family: "AbrilFatface";
   color: #3c1218;
   width: 100%;
   text-align: center;
@@ -514,6 +521,9 @@ body {
   background: linear-gradient(to right, #c77412, #905bfd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "AbrilFatface";
+}
+.headerMenu_le-chic .article_P1 {
   font-family: "AbrilFatface";
 }
 @media screen and (max-width: 599px) {
@@ -619,7 +629,7 @@ body {
   flex-wrap: wrap;
   background-color: inherit;
   font-size: 2em;
-  font-family: "Devonshire-Regular";
+  font-family: "Dancing Script";
   color: #3c1218;
   width: 100%;
   text-align: center;
@@ -628,6 +638,9 @@ body {
   background: linear-gradient(to right, #0431df, #83c0fa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script";
+}
+.headerMenu_le-delice .article_P1 {
   font-family: "Dancing Script";
 }
 @media screen and (max-width: 599px) {
@@ -733,7 +746,7 @@ body {
   flex-wrap: wrap;
   background-color: inherit;
   font-size: 2em;
-  font-family: "Devonshire-Regular";
+  font-family: "KaushanScript-Regular";
   color: #3c1218;
   width: 100%;
   text-align: center;
@@ -742,6 +755,9 @@ body {
   background: linear-gradient(to right, #42973c, #bfff7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "KaushanScript-Regular";
+}
+.headerMenu_la-palette .article_P1 {
   font-family: "KaushanScript-Regular";
 }
 @media screen and (max-width: 599px) {
@@ -901,7 +917,7 @@ h2 {
   width: 80%;
   align-items: flex-start;
   flex-grow: 2;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 @media screen and (max-width: 599px) {
   .entree .article_P1,
@@ -1012,6 +1028,25 @@ svg {
   fill: #3c1218;
 }
 
+.back-La-note .M1-font {
+  font-family: "Caveat-VariableFont_wght";
+  font-size: 16px;
+}
+@media screen and (max-width: 599px) {
+  .back-La-note .M1-font {
+    font-size: 0.9em;
+  }
+}
+.back-La-note .prix {
+  font-family: "Caveat-VariableFont_wght";
+  font-size: 1.5em;
+}
+@media screen and (max-width: 599px) {
+  .back-La-note .prix {
+    font-size: 0.9em;
+  }
+}
+
 /* ---------------- menu P2 le chic -------------------- */
 .back-le-chic .entree {
   color: #c77412;
@@ -1021,6 +1056,9 @@ svg {
 }
 .back-le-chic .dessert {
   color: #905bfd;
+}
+.back-le-chic .prix {
+  font-weight: inherit;
 }
 
 .entree,
@@ -1085,8 +1123,31 @@ svg {
 }
 
 /* ---------------- menu P4 la palette  -------------------- */
-.trait-4 {
-  fill: red;
+.yo {
+  fill: #42973c;
+}
+
+.back-la-palette h1 {
+  font-family: "Caveat-VariableFont_wght";
+  font-size: 1.1em;
+}
+.back-la-palette .M4-font {
+  font-family: "Caveat-VariableFont_wght";
+  font-size: 16px;
+}
+@media screen and (max-width: 599px) {
+  .back-la-palette .M4-font {
+    font-size: 0.9em;
+  }
+}
+.back-la-palette .prix {
+  font-family: "Caveat-VariableFont_wght";
+  font-size: 1.5em;
+}
+@media screen and (max-width: 599px) {
+  .back-la-palette .prix {
+    font-size: 0.9em;
+  }
 }
 
 .progress__bar {

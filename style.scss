@@ -276,7 +276,7 @@ h2 {
         width: 80%;
         align-items: flex-start;
         flex-grow: 2;
-        font-size: 0.8em;
+        font-size: 0.9em;
         @include mobile-only {
             font-size: 0.7em;
         }
@@ -344,6 +344,25 @@ svg {
     fill: $couleur_4;
 }
 
+.back-La-note{
+
+    .M1-font{
+        font-family: $font_la_palette_3;  
+        font-size: 16px;
+        @include mobile-only{
+            font-size: 0.9em;
+        }
+    }
+    .prix{
+        font-family: $font_la_palette_3;  
+        font-size: 1.5em;
+        @include mobile-only{
+            font-size: 0.9em;   
+        }
+    }
+}
+
+
 /* ---------------- menu P2 le chic -------------------- */
 
 .back-le-chic {
@@ -355,6 +374,9 @@ svg {
     }
     .dessert {
         color: $couleur_6;
+    }
+    .prix{
+        font-weight:inherit;  
     }
 }
 
@@ -411,13 +433,31 @@ svg {
 
 /* ---------------- menu P4 la palette  -------------------- */
 
-.trait-4{
-    fill: red;
+.yo{
+    fill: #42973c;
+    // background: linear-gradient(to right, #42973c, #bfff7e);
 }
 
-
-
-
+.back-la-palette{
+    h1{
+        font-family: $font_la_palette_3;   
+        font-size: 1.1em;
+    }
+    .M4-font{
+        font-family: $font_la_palette_3;  
+        font-size: 16px;
+        @include mobile-only{
+            font-size: 0.9em;
+        }
+    }
+    .prix{
+        font-family: $font_la_palette_3;  
+        font-size: 1.5em;
+        @include mobile-only{
+            font-size: 0.9em;
+        }
+    }
+}
 
 .progress {
     &__bar {
