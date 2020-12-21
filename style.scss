@@ -345,7 +345,10 @@ svg {
 }
 
 .back-La-note{
+    .intitule{
+        font-family: $font_la_palette_3; 
 
+    }
     .M1-font{
         font-family: $font_la_palette_3;  
         font-size: 16px;
@@ -355,7 +358,7 @@ svg {
     }
     .prix{
         font-family: $font_la_palette_3;  
-        font-size: 1.5em;
+        font-size: 1.3em;
         @include mobile-only{
             font-size: 0.9em;   
         }
@@ -396,6 +399,8 @@ svg {
         margin: 10px 0px 10px 0px;
         font-weight: bold;
         display: flex;
+        font-family: $font_la_palette_3;
+        font-size: 1.3em;
         :nth-child(1){
             margin-left: 0%;
         }

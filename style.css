@@ -1028,6 +1028,9 @@ svg {
   fill: #3c1218;
 }
 
+.back-La-note .intitule {
+  font-family: "Caveat-VariableFont_wght";
+}
 .back-La-note .M1-font {
   font-family: "Caveat-VariableFont_wght";
   font-size: 16px;
@@ -1039,7 +1042,7 @@ svg {
 }
 .back-La-note .prix {
   font-family: "Caveat-VariableFont_wght";
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 @media screen and (max-width: 599px) {
   .back-La-note .prix {
@@ -1080,6 +1083,8 @@ svg {
   margin: 10px 0px 10px 0px;
   font-weight: bold;
   display: flex;
+  font-family: "Caveat-VariableFont_wght";
+  font-size: 1.3em;
 }
 .entree .intitule :nth-child(1),
 .plats .intitule :nth-child(1),
