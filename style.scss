@@ -428,16 +428,21 @@ svg {
 }
 
 /* ---------------- menu P3 le delice -------------------- */
+.back-le-delice{
+    svg{
+        margin-top: 10px;
+    }
+    .trait-M3-T1{
+        fill: $couleur_7;
+    }
+    .trait-M3-T2{
+        fill: #096ff3;
+    }
+    .trait-M3-T3{
+        fill: $couleur_8;
+    }
+}
 
-.trait-M3-T1{
-    fill: $couleur_7;
-}
-.trait-M3-T2{
-    fill: #096ff3;
-}
-.trait-M3-T3{
-    fill: $couleur_8;
-}
 
 
 /* ---------------- menu P4 la palette  -------------------- */

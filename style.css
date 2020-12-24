@@ -1120,15 +1120,16 @@ svg {
 }
 
 /* ---------------- menu P3 le delice -------------------- */
-.trait-M3-T1 {
+.back-le-delice svg {
+  margin-top: 10px;
+}
+.back-le-delice .trait-M3-T1 {
   fill: #0431df;
 }
-
-.trait-M3-T2 {
+.back-le-delice .trait-M3-T2 {
   fill: #096ff3;
 }
-
-.trait-M3-T3 {
+.back-le-delice .trait-M3-T3 {
   fill: #83c0fa;
 }
 
