@@ -1036,6 +1036,9 @@ svg {
 .back-La-note .intitule {
   font-family: "Caveat-VariableFont_wght";
 }
+.back-La-note svg {
+  margin-top: 10px;
+}
 .back-La-note .M1-font {
   font-family: "Caveat-VariableFont_wght";
   font-size: 16px;
