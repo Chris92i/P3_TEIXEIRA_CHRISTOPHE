@@ -8,7 +8,6 @@
 @import "./layouts/footer";
 @import "./vendors/fontawesome-free-5.14.0-web/css/all.css";
 @import "./base/Font.scss";
-// @import "./responsive";
 
 /* ------------------------ page d'accueil --------------------- */
 
@@ -118,9 +117,6 @@ body {
     }
 
     .main_menu_#{map-get($menu, "resto")} {
-        // :nth-child(2){
-        //     flex-grow: 1;
-        // }
         @include main_menus(map-get($menu, "backgroundColor"));
         @include mobile-only{
             max-width: 95%;
@@ -215,7 +211,6 @@ h2 {
 
 .carte-Liste {
     width: 75%;
-    // max-height: 50vw;
     padding: 40px;
     @include mobile-only{
         // width: 85%;
@@ -472,7 +467,6 @@ svg {
 
 .yo{
     fill: #42973c;
-    // background: linear-gradient(to right, #42973c, #bfff7e);
 }
 
 .back-la-palette{
