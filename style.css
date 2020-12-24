@@ -199,7 +199,7 @@ footer a:nth-child(2) {
 }
 @font-face {
   font-family: "PTSerif-Regular";
-  src: url("./Font/PT_Serif/PTSerif-Regular");
+  src: url("./Font/PT_Serif/PTSerif-Regular.ttf");
 }
 @font-face {
   font-family: "Caveat-VariableFont_wght";
