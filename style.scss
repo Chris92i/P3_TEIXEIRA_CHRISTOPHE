@@ -470,3 +470,35 @@ svg {
         border: solid green;
     }
 }
+
+/* ---------------- page mentions légales  -------------------- */
+
+.mentions_legales{
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 40%;
+    margin-bottom: 2%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    // font-family: "DeliusUnicase-Bold";
+    // color: #3c1218;
+    font-size: 0.9em;
+    h1{
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    article{
+        margin: 20px;
+    }
+    @include mobile-only {
+        max-width: 100%;
+    }
+    @include tablet {
+        max-width: 50%;
+    }
+}

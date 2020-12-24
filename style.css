@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ---------------------------------------------- @imports  ------------------------------------- */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -1158,6 +1159,39 @@ svg {
 .progress__bar {
   transform: scaleX(0);
   border: solid green;
+}
+
+/* ---------------- page mentions légales  -------------------- */
+.mentions_legales {
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 40%;
+  margin-bottom: 2%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: center;
+  font-size: 0.9em;
+}
+.mentions_legales h1 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.mentions_legales article {
+  margin: 20px;
+}
+@media screen and (max-width: 599px) {
+  .mentions_legales {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .mentions_legales {
+    max-width: 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
