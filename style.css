@@ -1024,6 +1024,10 @@ svg {
   flex-grow: 1;
   width: 100%;
 }
+.intitule h2 {
+  flex-grow: 1;
+  width: 100%;
+}
 
 .trait-1 {
   fill: #3c1218;
