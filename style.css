@@ -1068,6 +1068,9 @@ svg {
 .back-le-chic .prix {
   font-weight: inherit;
 }
+.back-le-chic svg {
+  margin-top: 10px;
+}
 
 .entree,
 .plats,
