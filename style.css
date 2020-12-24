@@ -1074,6 +1074,10 @@ svg {
 .back-le-chic svg {
   margin-top: 10px;
 }
+.back-le-chic h2 {
+  font: caption;
+}
+
 .entree,
 .plats,
 .dessert {
