@@ -294,7 +294,6 @@ h2 {
 
 svg {
     height: 20px;
-    margin-top: 12px;
 }
 
 @each $key, $value in $menus {
@@ -474,6 +473,9 @@ svg {
         @include mobile-only{
             font-size: 0.9em;
         }
+    }
+    svg{
+        margin-top: 12px;
     }
 }
 

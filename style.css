@@ -945,7 +945,6 @@ h2 {
 
 svg {
   height: 20px;
-  margin-top: 12px;
 }
 
 .under-La-note {
@@ -1167,6 +1166,9 @@ svg {
   .back-la-palette .prix {
     font-size: 0.9em;
   }
+}
+.back-la-palette svg {
+  margin-top: 12px;
 }
 
 .progress__bar {
