@@ -294,6 +294,7 @@ h2 {
 
 svg {
     height: 20px;
+    margin-top: 5px;
 }
 
 @each $key, $value in $menus {
