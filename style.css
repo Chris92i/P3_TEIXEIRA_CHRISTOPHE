@@ -1074,7 +1074,6 @@ svg {
 .back-le-chic svg {
   margin-top: 10px;
 }
-
 .entree,
 .plats,
 .dessert {
@@ -1137,6 +1136,24 @@ svg {
 }
 .back-le-delice .trait-M3-T3 {
   fill: #83c0fa;
+}
+.back-le-delice .M1-font {
+  font-family: "Caveat-VariableFont_wght";
+  font-size: 16px;
+}
+@media screen and (max-width: 599px) {
+  .back-le-delice .M1-font {
+    font-size: 0.9em;
+  }
+}
+.back-le-delice h3 {
+  font-family: "Caveat-VariableFont_wght";
+  font-size: 16px;
+}
+@media screen and (max-width: 599px) {
+  .back-le-delice h3 {
+    font-size: 0.9em;
+  }
 }
 
 /* ---------------- menu P4 la palette  -------------------- */
